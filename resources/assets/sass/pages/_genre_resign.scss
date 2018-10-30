@@ -1,0 +1,119 @@
+.genre_resigning {
+    font-family: $font-family-sans-serif;
+    .corp_title {
+        margin: 20px 0;
+        padding: 10px;
+        background-color: $color-bg-badge-progress-index;
+        span {
+            margin-right: 20px;
+            font-size: 15px;
+            font-weight: bold;
+            color: $color-black-title;
+        }
+    }
+    h3 {
+        &.border_double_gray {
+            font-weight: normal;
+            padding: 5px 0;
+            text-indent: 5px;
+            font-size: 15px;
+            color: $color-black-title;
+            margin-top: 30px;
+            border-bottom: 3px double $color-bg-thead-report-jbr-commission;
+        }
+    }
+    .comment_space {
+        line-height: 200%;
+        color: $color-black-title;
+        strong {
+            color: $color-orange-primary;
+        }
+    }
+    .comment_space_sm {
+        font-size: 11px;
+        color: $color-black-title;
+        strong {
+            font-size: 13px;
+            font-weight: bold;
+        }
+    }
+    .orange_backcolor_info {
+        margin-top: 30px;
+        border: 1px $color-border-font solid;
+        background-color: $color-background;
+        padding: 15px;
+        line-height: 170%;
+        color: $color-black-title;
+        a {
+            text-decoration: underline;
+            color: $color-orange-primary;
+        }
+    }
+    .btnResign {
+        width: 14.56em;
+        height: 2.75em;
+        border: none;
+        cursor: pointer;
+    }
+    .btn-component-resign {
+        width: 14.56em;
+        height: 2.75em;
+        border: none;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+    .border_left_orange {
+        margin: 20px 0px;
+        padding: 0px 10px;
+        border-left: solid 8px $color-border-left;
+        border-bottom: none;
+        color: $color-grey-primary;
+        font-size: 13px;
+    }
+    .list_table {
+        border-collapse: separate;
+        border-spacing: 0px;
+        border: 1px solid $color-table;
+        max-width: 100%;
+        margin-bottom: 1rem;
+        .genre_table_th_tr {
+            background-color: $color-bg-thead;
+            padding: 10px 15px 10px 15px;
+            border: 1px $color-border-font solid;
+            text-align: left;
+            font-size: 11px;
+            font-weight: bold;
+            color: $color-black-title;
+            vertical-align: middle;
+            font-family: $font-family-sans-serif;
+            border-collapse: collapse;
+        }
+        .row-inited {
+            background-color: $color-bg-row-affiliation-genre-resign;
+        }
+        .genre_table_th_tr2 {
+            background-color: $color-bg-thead;
+            padding: 10px 0px 10px 8px;
+            text-align: left;
+            font-size: 11px;
+            font-weight: bold;
+            color: $color-black-title;
+            vertical-align: middle;
+            border-collapse: collapse;
+            border: 1px $color-border-font solid;
+            span {
+                margin-left: 2px;
+                font-size: 8px;
+                color: $color-border-left;
+            }
+        }
+        .genre_table_tr_td {
+            padding: 10px 10px;
+            border: 1px $color-border-font solid;
+            font-size: 11px;
+            font-family: $font-family-sans-serif;
+            height: 50px;
+            border-collapse: collapse;
+        }
+    }
+}

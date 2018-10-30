@@ -1,0 +1,94 @@
+.table-commission-select {
+    .text-gray {
+        color: $color-text-gray;
+    }
+    .fix-height-td {
+        height: 29px;
+    }
+    .fix-w-60 {
+        min-width: 60px;
+        max-width: 60px;
+    }
+}
+
+.form-commission-select {
+    .condition_info {
+        padding: 16px 15px;
+        border: 2px solid #eee;
+        margin-top: 20px;
+        border-radius: 3px;
+        p {
+            margin-bottom: 0;
+        }
+        .infor-left {
+            font-weight: bold;
+        }
+    }
+    .title {
+        margin-top: 0;
+        border-bottom: 3px double #000;
+    }
+    .orange_backcolor {
+        background-color: $color-background;
+        border: 2px solid #eee;
+        padding: 15px;
+        .form-checkbox {
+            .btn_gray_s {
+                margin-left: 10px;
+                margin-bottom: 5px;
+            }
+            .w200 {
+                width: 200px;
+            }
+        }
+        .input-group {
+            .w150 {
+                width: 150px;
+            }
+            .btn {
+                margin-left: 20px;
+                margin-bottom: 5px;
+            }
+        }
+    }
+    @media screen and (max-width: 576px) {
+        .condition_info {
+            .infor-left {
+                margin-bottom: 10px;
+            }
+        }
+        .orange_backcolor {
+            .form-checkbox {
+                .btn_gray_s {
+                    display: block;
+                    margin-left: 0;
+                }
+            }
+            .input-group {
+                .btn {
+                    display: block;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 991px) {
+        .orange_backcolor {
+            .form-checkbox {
+                .input-checkbox {
+                    margin-bottom: 10px;
+                }
+                .btn_gray_s:first-child {
+                    margin-left: 0;
+                }
+            }
+            .input-search {
+                margin-bottom: 10px;
+            }
+            .input-group {
+                .btn:first-child {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}

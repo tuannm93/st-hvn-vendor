@@ -1,0 +1,33 @@
+.notice-info-detail {
+    letter-spacing: 1px;
+    .notice-info-badge {
+        background-color: $color-bg-badge-notice-info-detail;
+        font-size: 0.875rem;
+    }
+    .text-wrap {
+        a {
+            color: $color-orange-primary;
+            text-decoration: underline;
+        }
+    }
+    .bg-label {
+        background-color: $color-bg-td-notice-info-detail;
+    }
+}
+
+.modal-notice-info-detail {
+    .border-top-custom {
+        border-top: 2px solid $color-border-top-modal-notice-info-detail;
+    }
+    .modal-dialog {
+        max-width: 600px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .modal-notice-info-detail {
+        .fs-26 {
+            font-size: 1rem;
+        }
+    }
+}

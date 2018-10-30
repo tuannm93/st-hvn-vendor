@@ -1,0 +1,93 @@
+.demand-detail {
+    .bg-yellow {
+        background-color: $color-background;
+    }
+    .modal-body {
+        max-height: 70vh;
+        overflow: auto;
+    }
+    #attention {
+        background-color: $color-default;
+        border: 1px solid $color-border-input;
+        border-radius: .25rem;
+        pre {
+            letter-spacing: 1px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            font-family: \\30D2\30E9\30AE\30CE\89D2\30B4 Pro W3,Hiragino Kaku Gothic Pro,\\30E1\30A4\30EA\30AA,Meiryo,Osaka,"\FF2D\FF33 \FF30\30B4\30B7\30C3\30AF",MS PGothic,sans-serif;
+        }
+    }
+    .pseudo-element {
+        display: none;
+    }
+    .custome-label {
+        &::before,
+        &::after {
+            left: 0;
+        }
+    }
+    .demand-detail-custom-checkbox{
+        .demand-detail-label-custom {
+            &::before,
+            &::after {
+                left: 6.5rem;
+            }
+        }
+        .demand-detail-close{
+            margin-left: 21px;
+        }
+    }
+    .demand_input_file{
+        position: absolute;
+        height: 30px;
+        opacity: 0;
+    }
+    .form-table {
+        border-collapse: collapse;
+        border: 1px solid $color-border-table-gray;
+        @media screen and (max-width: 1140px) {
+            .form-table-cell {
+                border: 1px solid $color-border-table-gray;
+            }
+        }
+        @media screen and (min-width: 1140px) {
+            .form-table-cell {
+                border-bottom: 1px solid $color-border-table-gray;
+            }
+        }
+    }
+    .fix-world-break-demand{
+        word-break: break-all;
+    }
+    .invalid-height-date-time-field {
+        height: 66px;
+    }
+    .invalid-height-sup-field {
+        height: 44px;
+    }
+    .err-date-time {
+        height: 76px;
+    }
+    .err-sup {
+        height: 62px;
+    }
+    #dropdown-detail {
+        position: absolute;
+        background: $color-default;
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1140px) {
+    .demand-detail {
+        .w-sm-15 {
+            width: 15% !important;
+        }
+        .w-xl-150 {
+            width: 150px;
+        }
+        .w-xl-450 {
+            width: 450px;
+        }
+    }
+}

@@ -1,0 +1,78 @@
+.tab-menu-custom {
+    padding-top: 7px;
+    ul {
+        border-bottom: 1px dotted $color-border-dotted;
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+        li {
+
+            &:first-child {
+                a {
+                    border-left: 1px dotted $color-border-dotted;
+                }
+            }
+            &.active {
+                .link {
+                    border-top-color: $color-border-input-invalid;
+                    background-color: transparent;
+                    color: $color-dark;
+                    &:hover,
+                    &:focus {
+                        color: $color-dark;
+                    }
+                }
+            }
+            .link {
+                width: 8.5rem;
+                height: 2.5rem;
+                justify-content: center;
+                display: inline-flex;
+                background-color: $color-bg-tab-deactive;
+                align-items: center;
+                text-align: center;
+                margin-bottom: 0 !important;
+                border-top: 3px solid transparent;
+                border-right: 1px dotted $color-border-dotted;
+                cursor: pointer;
+                border-radius: 0;
+                color: $color-link-tab;
+                &:hover,
+                &:focus {
+                    text-decoration: none;
+                    color: $color-link-tab;
+                }
+            }
+
+        }
+    }
+
+    @media only screen and (max-width: 667px) {
+        padding-top: 2px;
+        ul {
+            border-bottom: none !important;
+            li {
+                a {
+                    width: auto;
+                    border-bottom: 1px dotted $color-border-dotted !important;
+                    min-height: 2.636875rem;
+                    margin-top: auto;
+                    margin-bottom: auto;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 375px) {
+        ul {
+            li {
+                &:nth-last-child(2) {
+                    a {
+                        border-left: 1px dotted $color-border-dotted;
+                    }
+                }
+            }
+        }
+    }
+}

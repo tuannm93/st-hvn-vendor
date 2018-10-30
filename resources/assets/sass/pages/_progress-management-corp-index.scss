@@ -1,0 +1,46 @@
+.progress-management-corp-index {
+    .high-light {
+        color: $color-orange-primary;
+        text-decoration: underline;
+    }
+    .remove-effect-readonly {
+        background-color: $color-default;
+    }
+    .fix-w-10-pct {
+        width: 10%;
+    }
+    .fix-w-25-pct {
+        width: 25%;
+    }
+    .fix-w-65-pct {
+        width: 65%;
+    }
+    .custom-border {
+        border: 2px solid $color-border-td-table-progress-index;
+    }
+    .custome-label {
+        &::before,
+        &::after {
+            border: 1px solid $color-gray-light;
+            border-radius: 3px;
+            left: -.5rem;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .progress-management-corp-index {
+        .w-sm-5 {
+            width: 5% !important;
+        }
+        .w-sm-10 {
+            width: 10% !important;
+        }
+        .w-sm-85 {
+            width: 85% !important;
+        }
+        .w-sm-95 {
+            width: 95% !important;
+        }
+    }
+}

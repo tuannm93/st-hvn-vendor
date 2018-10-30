@@ -1,0 +1,11 @@
+.badge {
+
+  &.badge-warning {
+    line-height: .70 * $line-height-base;
+    color: #fff;
+    background-color: $color-orange-light;
+    margin: 0 .25rem;
+    font-size: 85%;
+    border-radius: 0;
+  }
+}

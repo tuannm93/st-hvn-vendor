@@ -1,0 +1,110 @@
+.form {
+    &__label {
+        &--white-light {
+            background-color: $color-white-light;
+        }
+
+        &--primary {
+            background-color: $color-orange-primary;
+            color: white;
+        }
+    }
+
+    &--border {
+        .form-group {
+            margin: 0;
+
+            &:not(:last-of-type) {
+                border-bottom: 1px solid $color-grey-light;
+            }
+        }
+    }
+
+}
+
+.custom-control-label {
+    line-height: (1rem * $line-height-base);
+    min-height: (1rem * $line-height-base);
+
+    &:hover {
+        background-color: $color-hover-radio-light;
+        cursor: pointer;
+    }
+}
+
+.invalid-feedback {
+    color: $color-mgs-required;
+    font-weight: bold;
+    font-size: 0.87em;
+}
+
+.ui-multiselect {
+    width: 100% !important;
+}
+
+.form-control.is-invalid,
+.custom-select.is-invalid,
+.form-check-input.is-invalid~.form-check-label,
+.custom-control-input.is-invalid~.custom-control-label,
+.custom-file-input.is-invalid~.custom-file-label {
+    border-color: $color-border-input-invalid !important;
+}
+
+.form-control.is-invalid:focus,
+.custom-select.is-invalid:focus {
+    border-color: $color-border-input-invalid !important;
+    -webkit-box-shadow: 0 0 0 0.2rem $color-box-shadow-invalid !important;
+    box-shadow: 0 0 0 0.2rem $color-box-shadow-invalid !important;
+}
+
+.custom-control-input.is-invalid~.custom-control-label::before {
+    background-color: $color-bg-input-invalid !important;
+}
+
+.custom-control-input.is-invalid:checked~.custom-control-label::before {
+    background-color: $color-bg-checked-invalid !important;
+}
+
+.custom-radio,
+.custom-checkbox {
+    .custom-feedback {
+        left: -25px;
+        position: inherit;
+    }
+}
+
+.form-control[data-readonly] {
+    background-color: $color-default;
+    opacity: 1;
+}
+
+.form-group {
+    &__sub-label {
+        position: absolute;
+        right: 0;
+        bottom: 6px;
+    }
+}
+
+.form-table {
+    .form__label {
+        display: inline-block;
+        vertical-align: middle;
+        width: 100%;
+    }
+}
+
+
+.form-note {
+    margin: 20px 0px 20px 0px;
+    padding: 0px 10px;
+    border-left: solid 8px #f27a09;
+    border-bottom: none;
+    color: #333;
+}
+
+.hasDatepicker[readonly] {
+    &.only-ios {
+        background-color: $color-default;
+    }
+}

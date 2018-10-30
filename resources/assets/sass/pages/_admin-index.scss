@@ -1,0 +1,44 @@
+#admin-index {
+    .list-group {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        .group {
+            padding-bottom: 10px;
+            background-color: $color-bg-content-list;
+            
+            .list-group-item {
+                padding: 0.3rem 1rem;
+                border: none;
+                &:first-child {
+                    margin-bottom: 10px;
+                }
+                &.list-group-item-info {
+                    background: $color-gradient-header-list;
+                    border-top: none;
+                    padding-left: 0.3rem;
+                    color: white;
+                    font-weight: bold;
+                    &:hover {
+                        z-index: 0;
+                    }
+                }
+                &.list-group-item-warning {
+                    background-color: transparent;
+                    text-decoration: underline;
+                    color: $color-orange-primary;
+                    background-color: transparent;
+                    &:hover {
+                        text-decoration: none;
+                    }
+                    i {
+                        background-color: $color-bg-icon-list;
+                        color: white;
+                        padding: 1px 2px;
+                        margin-right: 5px;
+                        font-size: 0.7rem;
+                    }
+                }
+            }
+        }
+    }
+}

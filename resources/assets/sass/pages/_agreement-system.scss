@@ -1,0 +1,123 @@
+.agreement-system {
+  .btn {
+    @include border-radius(0);
+    min-width: 150px;
+  }
+
+  .border_left_orange {
+    padding: 0 10px ;
+    border-left: solid 8px $color-orange-primary;
+    border-bottom: none;
+    color: $color-grey-primary;
+    font-size: 13px;
+  }
+
+  .custom-checkbox {
+      &.mobile-mail-none {
+        padding-right: 1.5rem;
+        padding-left: 0;
+        .custom-control-label {
+            &::before, &::after {
+                left: 5.4rem;
+            }
+        }
+    }
+  }
+
+  &.step-3 {
+    .box-mess {
+      padding: .6rem;
+    }
+
+    .table-content {
+      thead {
+        white-space: nowrap;
+      }
+
+      td {
+        vertical-align: middle;
+      }
+
+      .row-divider {
+        height: 10px;
+      }
+
+      @media screen and (min-width: 992px){
+        th {
+          width: 10%;
+          &:last-child {
+            width: 20%;
+          }
+        }
+      }
+
+      @media screen and (max-width: 767px) {
+        thead {
+          display: none;
+        }
+
+        tr {
+          border-bottom: 1px solid $color-gray-light;
+          td {
+            display: grid;
+            grid-template-columns: 25% 75%;
+            align-items: center;
+            &:before {
+              content: attr(data-label);
+              margin-right: 10px;
+              padding: 5px;
+              color: $color-default;
+              background-color: $color-gray-light;
+            }
+
+            &:first-child {
+              grid-template-columns: 25% 55% 20%;
+            }
+          }
+        }
+      }
+    }
+
+    .genre-group {
+      background-color: $color-yellow-lighter;
+
+      .genre-item {
+        color: $color-green-primary;
+        text-decoration: none;
+        border-bottom: 1px solid $color-green-primary;
+      }
+    }
+  }
+
+  &.step-5 {
+      .card-title {
+          background-color: $color-bg-progress-admin;
+      }
+
+      @media screen and (max-width: 575px) {
+          .table-list {
+              thead {
+                  display: none;
+              }
+
+              tbody {
+                  tr {
+                      border-bottom: 1px solid $color-gray-light;
+                      td {
+                          display: grid;
+                          grid-template-columns: 25% 75%;
+                          align-items: center;
+                          &:before {
+                              content: attr(data-label);
+                              margin-right: 10px;
+                              padding: 5px;
+                              color: $color-default;
+                              background-color: $color-gray-light;
+                          }
+                      }
+                  }
+              }
+          }
+      }
+  }
+}

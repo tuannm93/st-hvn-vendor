@@ -1,0 +1,19 @@
+.page-error {
+    &__header {
+        padding: 0px;
+    }
+    &__body {
+        padding: 10px 10px;
+        .link-back {
+            color: $color-orange-primary;
+            text-decoration: underline;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+    &__footer {
+        height: 50px;
+        background: $color-gradient-orange;
+    }
+}

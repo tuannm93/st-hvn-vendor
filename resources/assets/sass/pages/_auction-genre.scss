@@ -1,0 +1,17 @@
+.auction-genre {
+    small {
+        font-size: 90%;
+    }
+    .link-genre {
+        a, a:hover {
+            color: $color-orange-primary;
+            text-decoration: underline;
+        }
+        a:hover {
+            border-bottom: 1px solid $color-green-primary;
+        }
+    }
+    .btn {
+        width: 6.25rem;
+    }
+}

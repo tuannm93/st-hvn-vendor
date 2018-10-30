@@ -1,0 +1,128 @@
+#bill-search {
+    .form-search {
+        border: 2px solid $color-gray-light;
+        padding-top: 10px;
+        background: $color-bg-form-search;
+        .form-group {
+            padding-left: 30px;
+            padding-right: 30px;
+            label {
+                padding-right: 15px;
+                justify-content: left;
+                padding-left: 0;
+            }
+        }
+    }
+    
+    .out_line {
+        &:focus {
+            outline-color: $color-text-danger;
+        }
+    }
+
+    .highlight-link {
+        color: $color-orange-primary;
+        &:hover {
+            color: $color-orange-primary;
+            text-decoration: underline;
+        }
+    }
+
+    .paginate_button {
+        &:hover {
+            color: $color-orange-primary;
+        }
+    }
+
+    .table-result-search {
+        margin-top: 2rem;
+        table {
+            margin-bottom: .5rem;
+            td,
+            th {
+                border-color: grey;
+                border-width: 2px;
+                padding: 0.3rem;
+                vertical-align: middle;
+            }
+            thead {
+                th {
+                    background: $color-yellow-light;
+                }
+            }
+            tbody {
+                tr {
+                    td {
+                        &:last-child {
+                            a {
+                                color: $color-orange-primary;
+                                &:hover {
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .dataTables_paginate {
+            margin-left: 15px;
+        }
+    }
+}
+
+.bill {
+    .bill_detail {
+        .title-head {
+            margin-bottom: 5px;
+            font-size: 14px;
+            border-bottom: 3px double $color-dark;
+            width: 100%;
+            font-weight: bold;
+        }
+        .ml-7 {
+            margin-left: 7rem;
+        }
+        .table-infor {
+            border: none;
+            td {
+                width: 4.2rem;
+                padding: .5rem;
+            }
+        }
+    }
+    .fix-nowarp {
+        white-space: nowrap;
+    }
+    .bill_output {
+        .boder-content {
+            border: 2px solid $color-border-search-box-report-jbr-receipt;
+        }
+        .bg-content {
+            background-color: $color-bg-form-search;
+        }
+        .custom-checkbox {
+            .custom-control-label {
+                &:before {
+                    border: 1px solid $color-gray-light;
+                }
+            }
+        }
+        .custom-control {
+            .custom-control-input {
+                top: 5px;
+                left: 0;
+                z-index: 1;
+            }
+        }
+    }
+}
+@media screen and (min-width: 768px) {
+    .bill {
+        .bill_detail { 
+            .button-w-120 {
+                width: 120px;
+            }
+        }
+    }
+}

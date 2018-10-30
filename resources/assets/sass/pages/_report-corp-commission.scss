@@ -1,0 +1,67 @@
+.report-corp-commission {
+    .bg-update-box {
+        background-color: $color-bg-form-search;
+    }
+
+    .border-update-box {
+        border: 2px solid $color-border-box-general-search-index;
+    }
+
+    .fix-white-space-box {
+        white-space: nowrap;
+    }
+
+    .highlight-link {
+        color: $color-orange-primary;
+        &:hover {
+            color: $color-orange-primary;
+            text-decoration: underline;
+        }
+    }
+
+    #commission_rank {
+        width: 300px;
+    }
+
+    #holiday {
+        width: 300px;
+    }
+    .select-btn-fix {
+        position: relative;
+    }
+
+    .btn-commission-rank {
+        position: absolute;
+        top: 20px;
+        z-index: 1000;
+    }
+    .bgcolor-green {
+        background-color: $color-green-light;
+    }
+
+    .bgcolor-red {
+        background-color: $color-row-red;
+    }
+
+    .bgcolor-yellow {
+        background-color: $color-row-yellow;
+    }
+
+    .text--underline {
+        cursor: pointer;
+    }
+}
+@media screen and (min-width: 992px) {
+    .report-corp-commission {
+        .fix-width-a {
+            width: 105px;
+            white-space: normal;
+        }
+        .fix-width-selec {
+            width: 120px;
+        }
+        .infor-select {
+            height: 95px;
+        }
+    }
+}

@@ -1,0 +1,75 @@
+.auction-flowing { 
+    .form-category {
+        padding-top: 10px;
+        &__label {
+            margin-bottom: 15px;
+        }
+        .form-search {
+            border: 2px solid $color-gray-light;
+            padding-top: 10px;
+            background: $color-bg-form-search;
+            .row {
+                margin-left: 0;
+                margin-right: 0;
+                .form-inline {
+                    [class~="ui-multiselect"] {
+                        min-height: 30px;
+                        span:last-of-type {
+                            color: $color-grey-primary !important;
+                        }
+                    }
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    select {
+                        width: 100%;
+                    }
+                    label {
+                        padding-right: 15px;
+                        justify-content: left;
+                        padding-left: 0;
+                    }
+                    .form-date {
+                        padding-left: 0;
+                        padding-right: 0;
+                    }
+                }
+            }
+        }
+        .table-result-search {
+            margin-top: 2rem;
+            table {
+                margin-bottom: .5rem;
+                td, th {
+                    border-color: grey;
+                    border-width: 2px;
+                    padding: 0.3rem;
+                    vertical-align: middle;
+                }
+                thead {
+                    th {
+                        background: $color-yellow-light;
+                    }
+                }
+                tbody {
+                    tr {
+                        td {
+                            &:last-child {
+                                a {
+                                    color: $color-orange-primary;
+                                    &:hover {
+                                        text-decoration: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .fieldset-custom {
+            fieldset {
+                min-width: initial;
+            }
+        }
+    }
+}

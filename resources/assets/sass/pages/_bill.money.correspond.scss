@@ -1,0 +1,101 @@
+.bill-money-correspond {
+    padding-top: 10px;
+    .group-header {
+        padding-left: 0;
+    }
+    [class~="btn"]:not([class~="btn-sm"]) {
+        width: 100px;
+    }
+    .fieldset-custom {
+        padding-top: 7px;
+        .form-search {
+            border: 2px solid $color-gray-light;
+            padding-top: 10px;
+            background: $color-bg-form-search;
+            .row {
+                margin-left: 0;
+                margin-right: 0;
+                .form-inline {
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    select {
+                        width: 100%;
+                    }
+                    label {
+                        padding-right: 15px;
+                        justify-content: left;
+                        padding-left: 0;
+                    }
+                    .form-date {
+                        padding-left: 0;
+                        padding-right: 0;
+                    }
+                }
+            }
+        }
+    }
+    .form-category {
+        margin-left: -15px;
+        padding-top: 15px;
+        &__label {
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+        &__body {
+            .form-group>label,
+            .form-group>div {
+                margin-top: auto;
+                margin-bottom: auto;
+                &.yen-label {
+                    margin-top: 0;
+                }
+            }
+            .create-deposit {
+                padding-left: 30px;
+                .alert {
+                    margin-bottom: 15px;
+                }
+            }
+            .table-result-search {
+                margin-top: 1.5rem;
+                margin-left: -15px;
+                table {
+                    margin-bottom: .5rem;
+                    td,
+                    th {
+                        border-color: grey;
+                        border-width: 2px;
+                        padding: 0.3rem;
+                        vertical-align: middle;
+                    }
+                    thead {
+                        th {
+                            background: $color-yellow-light;
+                            .order-by, .order-by:hover {
+                                color: $color-orange-primary;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                    tbody {
+                        tr {
+                            td {
+                                &:last-child {
+                                    a {
+                                        color: $color-orange-primary;
+                                        &:hover {
+                                            text-decoration: none;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .dataTables_paginate {
+                padding-top: 15px;
+            }
+        }
+    }
+}

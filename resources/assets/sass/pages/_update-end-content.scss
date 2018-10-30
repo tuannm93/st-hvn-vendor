@@ -1,0 +1,33 @@
+.title_update_end {
+    background: $color-bg-progress-admin;
+    color: $color-default;
+    font-size: 100%;
+    padding-left: 2em;
+    line-height: 3em;
+}
+
+.box_center_update_end{
+    width: 50%;
+    height: auto;
+    margin: 15px auto 0px;
+    border: 1px solid $color-border-box-general-search-index;
+    background: none repeat scroll 0% 0% $color-bg-row-admin-demand;
+    padding: 20px;
+    @media screen and (max-width: 768px){
+        width: 100%;
+    }
+    .message{
+        color: #fff;
+        background: #c43c35;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        background-image: -webkit-linear-gradient(top, #ee5f5b, #c43c35);
+        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+        @include border-radius(4px);
+        font-size: 140%;
+        font-weight: bold;
+        margin: 0 0 1em 0;
+        margin-bottom: 18px;
+        padding: 7px 14px;
+        @include box-shadow(inset 0 1px 0 rgba(255, 255, 255, 0.25));
+    }
+}

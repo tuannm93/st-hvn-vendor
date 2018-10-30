@@ -1,0 +1,129 @@
+.progress-block {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1051;
+    background-color: rgba(255, 255, 255, .5);
+
+    .progress {
+        display: block;
+        text-align: center;
+        width: 0;
+        height: 4px;
+        background-color: #28a745;
+        transition: width .3s;
+        border-radius: 0;
+
+        &.hide {
+            opacity: 0;
+            transition: opacity 1.3s;
+        }
+    }
+}
+
+.progress_step {
+    width: auto;
+
+    .progressbar {
+        li {
+            background: $color-progress-step;
+            padding: 5px 10px 6px;
+            position: relative;
+            margin-right: 25px;
+            color: $color-progress-step-text;
+
+            &.custom-height-li {
+                &:before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    right: -20px;
+                    top: 0;
+                    border-top: 25px solid transparent;
+                    border-left: 20px solid $color-progress-step;
+                    border-bottom: 26px solid transparent;
+                }
+    
+                &:after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: -20px;
+                    border-top: 25px solid $color-progress-step;
+                    border-left: 20px solid transparent;
+                    border-bottom: 26px solid $color-progress-step;
+                }
+            }
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                right: -20px;
+                top: 0;
+                border-top: 15px solid transparent;
+                border-left: 20px solid $color-progress-step;
+                border-bottom: 15px solid transparent;
+            }
+
+            &:after {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                left: -20px;
+                border-top: 15px solid $color-progress-step;
+                border-left: 20px solid transparent;
+                border-bottom: 15px solid $color-progress-step;
+            }
+
+            &.active {
+                background: $color-progress-step-active;
+                color: $color-white-primary;
+                &:before {
+                    border-left-color: $color-progress-step-active;
+                }
+                &:after {
+                    border-top-color: $color-progress-step-active;
+                    border-bottom-color: $color-progress-step-active;
+                }
+            }
+
+            &.past {
+                color: rgba($color-progress-step-text, .6);
+            }
+            @media screen and (min-width: 575px) {
+                &.w-sm-30 {
+                width: 30%;
+                }
+                &.w-sm-15 {
+                width: 15%;
+                }
+            }
+        }
+
+        &--lg {
+            li {
+                padding: 10px 10px 11px;
+                margin-right: 30px;
+
+                &:before {
+                    right: -25px;
+                    border-top: 20px solid transparent;
+                    border-left: 25px solid $color-progress-step;
+                    border-bottom: 20px solid transparent;
+                }
+
+                &:after {
+                    left: -25px;
+                    border-top: 20px solid $color-progress-step;
+                    border-left: 25px solid transparent;
+                    border-bottom: 20px solid $color-progress-step;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,59 @@
+.progress-management-delete {
+    .table-bordered {
+        thead {
+            background-color: $color-yellow-light;
+        }
+        th,
+        td {
+            border: 2px solid $color-border-td-table-progress-index;
+        }
+    }
+    .remove-focus-effect {
+        &:focus {
+            opacity: 1;
+            -webkit-box-shadow: 0 0 0 0.2rem $color-default;
+            box-shadow: 0 0 0 0.2rem $color-default;
+        }
+    }
+    .fs-20 {
+        font-size: 1.25rem;
+    }
+    .title {
+        height: 3rem;
+        background: $color-bg-progress-admin;
+        color: $color-default;
+        padding: 0px;
+        h1 {
+            line-height: 20px;
+            font-size: 100%;
+            color: $color-default;
+            padding: .8rem .5rem;
+        }
+    }
+    .table-progress {
+        border-collapse: separate;
+        color: $color-grey-primary;
+        font-family: 'lucida grande', verdana, helvetica, arial, sans-serif;
+        font-size: 115%;
+        th {
+            border-bottom: 2px solid $color-border-text-gray;
+            padding: .25rem;
+            background-color: $color-default;
+            font-weight: bold;
+        }
+        td {
+            border-bottom: 1px solid $color-border-bt-gray;
+            padding: .38rem 0;
+        }
+        label {
+            font-size: 110%;
+        }
+    }
+    .title-progress {
+        padding: 20px 0 5px;
+        h2 {
+            color: $color-text-h3;
+            font-size: 1.5rem;
+        }
+    }
+}

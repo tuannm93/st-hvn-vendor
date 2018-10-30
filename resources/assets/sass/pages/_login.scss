@@ -1,0 +1,29 @@
+@media (min-width: 420px) {
+    .login {
+        max-width: 788px;
+        border: 4px solid $color-dark;
+    }
+}
+
+@media (min-width: 768px) {
+    .login {
+        .form-login {
+            max-width: 500px;
+        }
+    }
+}
+
+.login {
+    .form-login {
+        padding: 3rem;
+    }
+    .custom-control-label:hover {
+        background-color: $color-default;
+    }
+    input[type="submit"] {
+        padding: .5rem 4rem;
+        border: none;
+        color: $color-default;
+        cursor: pointer;
+    }
+}

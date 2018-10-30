@@ -1,0 +1,39 @@
+.affiliation-index {
+    .btn-pagination {
+        border: none;
+        background: none;
+        cursor: pointer;
+        &:disabled {
+            cursor: auto;
+        }
+    }
+    #searchGenre {
+        &:hover {
+            cursor: pointer;
+            background-color: $color-orange-light;
+        }
+    }
+    .ui-state-default {
+        color: $color-dark;
+        min-height: 33px;
+    }
+    .item-pagination {
+        cursor: pointer;
+        &.active {
+            color: $color-orange-primary;
+        }
+    }
+    .btn {
+        &.remove-effect-btn {
+            &:focus {
+                outline: 5px auto -webkit-focus-ring-color;
+            }
+        }
+    }
+}
+
+.custom-modal-affiliation-index {
+    .border-top-bold {
+        border-top: 2px solid $color-border-td-table-progress-index;
+    }
+}

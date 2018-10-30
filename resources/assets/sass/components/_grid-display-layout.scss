@@ -1,0 +1,10 @@
+.grid{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  @for $number from 1 through 12 {
+    .grid-#{$number}{
+      grid-area: auto / span $number;
+    }
+  }
+}

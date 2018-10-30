@@ -1,0 +1,33 @@
+<?php
+
+return [
+    'merchant_contract_category_history' => '加盟店契約カテゴリ 履歴',
+    'search_condition' => '検索条件',
+    'list_display' => '一覧表示',
+    'csv_output' => 'CSV出力',
+    'history_id' => '履歴ID',
+    'contract_id' => '契約ID',
+    'company_id' => '企業ID',
+    'company_name' => '商号',
+    'genre_id' => 'ジャンルID',
+    'genre_name' => 'ジャンル名',
+    'category_id' => 'カテゴリID',
+    'category_name' => 'カテゴリ名',
+    'order_receiving_fee' => '受注手数料',
+    'order_commission_unit' => '受注手数料単位',
+    'referral_fee' => '紹介手数料',
+    'expertise' => '専門性',
+    'order_form' => '取次形態',
+    'update_date_and_time' => '更新日時',
+    'update_type' => '更新種別',
+    'remarks' => '備考',
+    'update_contents' => '更新内容',
+    'add_to' => '追加',
+    'delete' => '削除',
+    'change' => '変更',
+    'name_csv' => 'corp_agreement_category',
+    'formal_member_store_name' => '正式加盟店名',
+    'order_commission_unit_price' => '受注手数料単価',
+    'total_number' => '総件数',
+    'matter' => '件'
+];

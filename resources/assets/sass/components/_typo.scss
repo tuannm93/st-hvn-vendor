@@ -1,0 +1,35 @@
+.text {
+    &--orange {
+        color: $color-orange-primary;
+    }
+    &--orange-light {
+        color: $color-orange-light;
+    }
+    &--white {
+        color: $color-default;
+    }
+    &--no-decoration {
+        text-decoration: none !important;
+    }
+    &--info {
+        color: $color-info !important;
+    }
+    &--underline {
+        text-decoration: underline !important;
+    }
+}
+
+.font-large {
+    font-size: 18px;
+}
+
+.text-danger {
+    color: $color-text-danger !important;
+}
+
+.text-wrap {
+    word-wrap: break-word;
+}
+.text--underline {
+    text-decoration: underline;
+}

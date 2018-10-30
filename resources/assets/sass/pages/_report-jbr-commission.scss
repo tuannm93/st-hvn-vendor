@@ -1,0 +1,28 @@
+.report-jbr-commission {
+    .pagination {
+        li {
+            margin-right: 15px;
+            &.disabled {
+                cursor: text;
+            }
+        }
+    }
+}
+tr {
+    &.bgcolor-yellow {
+        background-color: $bgcolor-yellow
+    }
+    &.bgcolor-red {
+        background-color: $bgcolor-red
+    }
+    &.bgcolor-green {
+        background-color: $color-green-primary
+    }
+}
+
+@media (min-width: 1140px) {
+    .col-xl-20 {
+        max-width: 20%;
+        padding: 1rem;
+    }
+}

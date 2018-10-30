@@ -1,0 +1,43 @@
+.general-search-index {
+    .box--error {
+        display: none;
+    }
+    .border-box {
+        border: 2px solid $color-border-box-general-search-index;
+    }
+    .bg-box {
+        background-color: $color-bg-box-general-search-index;
+    }
+    #call_suggest_genre {
+        &:hover {
+            background-color: $color-orange-light;
+            cursor: pointer;
+        }
+    }
+    .switch-button {
+        cursor: pointer;
+    }
+    .ui-state-default {
+        color: $color-dark;
+        min-height: 33px;
+    }
+    .fix-height-22vh-table-modal {
+        height: 22vh;
+    }
+    .fix-height-50vh-table-modal {
+        height: 50vh;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .general-search-index {
+        #move_right,
+        #move_up {
+            top: 35%;
+        }
+        #move_left,
+        #move_down {
+            top: 44%;
+        }
+    }
+}

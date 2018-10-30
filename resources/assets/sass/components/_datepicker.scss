@@ -1,0 +1,33 @@
+.ui-widget-content {
+    background: $color-bg-gray-light-progress-demand;
+}
+@media only screen and (max-width: 767px) {
+    .ui-timepicker-div {
+        dl {
+            margin-bottom: 0;
+            .ui_tpicker_hour, .ui_tpicker_minute {
+                margin: 5px 10px 5px 25% !important;
+                height: 25px;
+                .ui_tpicker_hour_slider, .ui_tpicker_minute_slider {
+                    width: 44% !important;
+                }
+            }
+            .ui_tpicker_time  {
+                margin-bottom: 3px;
+                margin-left: 25% !important;
+            }
+            .ui-slider-access {
+                &::before {
+                    display: inline !important;
+                }
+                .ui-widget {
+                    margin-bottom: 6px;
+                }
+            }
+        }
+    }
+
+    .ui-datepicker-buttonpane {
+        margin-top: 0 !important;
+    }
+}

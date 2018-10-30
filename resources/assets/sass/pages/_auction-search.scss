@@ -1,0 +1,278 @@
+.auction-search {
+    .search-box {
+        .switch-btn {
+            cursor: pointer;
+            border: 1px solid $color-gray-light;
+            &.activated {
+                background-color: $color-gray-light;
+                color: $color-default;
+                border-color: $color-gray-light;
+                &.left {
+                    border-top-left-radius: 5px;
+                    border-bottom-left-radius: 5px;
+                }
+                &.right {
+                    border-top-right-radius: 5px;
+                    border-bottom-right-radius: 5px;
+                }
+            }
+        }
+    }
+    .ui-state-default {
+        color: $color-dark;
+        min-height: 33px;
+    }
+    .auction-link {
+        background-color: $color-white-light;
+        .text-dark {
+            &:last-child {
+                color: $color-orange-primary;
+            }
+        }
+    }
+    .table-block {
+        .row {
+            &.p-2 {
+                background-color: #ddd;
+            }
+        }
+        .label-1 {
+            background-color: $color-default;
+        }
+        .label-2,
+        .label-3 {
+            .fa-square {
+                color: $color-orange-primary;
+            }
+        }
+        .label-3 {
+            a {
+                color: $color-green-primary;
+                text-decoration: underline;
+                &:hover {
+                    color: $color-green-primary;
+                }
+            }
+        }
+        .date-lable {
+            color: $color-default;
+            background-color: #23272b;
+        }
+        .bg--gray-light {
+            background-color: #ddd;
+        }
+        .border-orange {
+            border: 2px solid $color-orange-light;
+        }
+        .fa-square {
+            font-size: .6rem;
+        }
+        .table {
+            tbody {
+                td {
+                    //&:nth-child(6) {
+                    //    a {
+                    //        color: $color-orange-primary;
+                    //        text-decoration: underline;
+                    //        &:hover {
+                    //            color: $color-orange-primary;
+                    //        }
+                    //    }
+                    //}
+                }
+            }
+        }
+    }
+    .kameiten-account {
+        .collapse-link {
+            font-size: 1.0625rem;
+            text-decoration: underline;
+            color: $color-orange-light;
+            cursor: pointer;
+        }
+    }
+    #table-calendar {
+        background-color: rgba($color-yellow-light, .2);
+        position: relative;
+        .custom-calendar {
+            background-color: $color-default;
+            border: 1px inset $color-gray-light;
+            border-radius: 10px;
+            .bg-header {
+                background-color: rgba($color-yellow-light, .2);
+            }
+            .holiday {
+                color: $color-text-danger;
+            }
+            .out-date {
+                color: rgba($color-gray-light, .5);
+                &.holiday {
+                    color: rgba($color-gray-light, .5);
+                }
+            }
+            .has-events {
+                color: $color-default;
+                border-radius: 50%;
+                background-color: $color-orange-light;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+        .fa-chevron-left,
+        .fa-chevron-right {
+            position: absolute;
+            display: inline;
+            color: $color-orange-primary;
+            cursor: pointer;
+            top: 40%;
+        }
+        .fa-chevron-left {
+            left: 0;
+        }
+        .fa-chevron-right {
+            right: 0;
+        }
+    }
+    .table-mobi {
+        .commission_info_title {
+            font-size: 12px;
+            color: white;
+            font-weight: bold;
+            background-color: #f29207;
+            padding: 5px;
+            .checkbox-delete {
+                height: 20px;
+                width: 20px;
+            }
+        }
+        .detail_box {
+            .border-left-orange {
+                border-left: 4px solid #f9ba33;
+            }
+            .button_block {
+                background-color: #dcdcdc;
+            }
+        }
+    }
+    .collapse-label-mobi {
+        background-color: #b9b9b9;
+    }
+
+    .fade-table-mobi {
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        filter: alpha(opacity=50);
+        -moz-opacity: 0.5;
+        opacity: 0.5;
+    }
+
+    .disable-action {
+        pointer-events: none;
+        *:not([class~=fade-table-mobi]) {
+            position: initial;
+        }
+    }
+
+    .btn-fix-margin {
+        margin-left: -0.5rem;
+        margin-right: -0.5rem;
+    }
+
+    .popup-not-pay {
+        border: 1px solid $color-yellow-primary;
+        width: 96%;
+        left: 2%;
+        top: 40.7%;
+        .popup-title {
+            background-color: $color-dark;
+            color: $color-default;
+            font-size: 13px;
+        }
+
+        .popup-content {
+            background-color: $color-default;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .auction-search {
+        .max-w-xl-10 {
+            max-width: 10%;
+            &.mb-3 {
+                padding-left: .5rem;
+            }
+        }
+        .max-w-xl-20 {
+            max-width: 20%;
+            &.mb-3 {
+                padding-right: .5rem;
+            }
+        }
+        .max-w-xl-35 {
+            max-width: 35%;
+            &.mb-3 {
+                padding-right: .5rem;
+                padding-left: .5rem;
+            }
+        }
+        .max-w-xl-10,
+        .max-w-xl-20,
+        .max-w-xl-35 {
+            display: inline-block;
+        }
+        #table-calendar {
+            .fa-chevron-left,
+            .fa-chevron-right {
+                color: rgba($color-gray-light, .5);
+                &:hover {
+                    color: $color-orange-primary;
+                }
+            }
+            .fa-chevron-left {
+                left: 16%;
+            }
+            .fa-chevron-right {
+                right: 16%;
+            }
+        }
+    }
+}
+@media (max-width: 1200px) {
+    .auction-search {
+        .sort-key-box {
+            .sort-link {
+                border-radius: 1rem;
+                border: 1px solid $color-gray-light;
+                background-color: $color-default;
+                display: inline;
+                margin-right: .5rem;
+            }
+        }
+    }
+}
+
+#list_event_dialog {
+    .modal-header {
+        border: 0;
+    }
+    .modal-content {
+        border: 3px solid $color-orange-light;
+        border-radius: 0;
+    }
+    .close {
+        padding: 2px 2px 4px 4px;
+        margin: -4px -4px -16px auto;
+        color: $color-white-primary;
+        background: $color-orange-light;
+        opacity: 1;
+        font-size: 0.6875rem;
+    }
+    .btn {
+        &.btn--gradient-green {
+            color: $color-default;
+        }
+    }
+}

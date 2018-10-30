@@ -1,0 +1,27 @@
+<?php
+return [
+    'list_title' => '追加施工案件一覧',
+    'demand_id' => '元案件番号',
+    'customer_name' => 'お客様名',
+    'genre_name' => 'ジャンル',
+    'construction_price_tax_exclude' => '施工金額（税抜）',
+    'complete_date' => '施工完了日',
+    'demand_type_update' => '案件属性',
+    'note' => '備考',
+    'form_title' => '追加施工案件入力',
+    'note_column' => '備考欄',
+    'save' => '登録',
+    'delete' => '削除',
+    'required' => '必須',
+    'date_format' => '日付時間形式で入力してください。',
+    'confirm_popup_title' => '削除を確認する',
+    'confirm_popup_content' => '削除します。宜しいですか？',
+    'btn_cancel' => 'キャンセル',
+    'btn_confirm' => '削除',
+    'create_success' => '更新が完了しました。',
+    'delete_fail' => '削除は失敗します。',
+    'delete_success' => '削除に成功しました。',
+    'save_fail' => '保存に失敗しました。',
+    'validate_fail' => '入力項目を確認してください。',
+    'required_input' => '必須入力です。'
+];

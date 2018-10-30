@@ -1,0 +1,33 @@
+.target_demand_flag {
+    .border_double_gray {
+        margin-bottom: 5px;
+        font-weight: normal;
+        padding: 5px 0;
+        text-indent: 5px;
+        font-size: 15px;
+        color: #000000;
+        margin-top: 30px;
+        border-bottom: 3px double $color-bg-thead-report-jbr-commission;
+    }
+    .list_table {
+        border-collapse: separate;
+        border-spacing: 0px;
+        border-top: 1px solid $color-table;
+        border-left:1px solid $color-table;
+        width: 100%;
+        .genre_table_th_tr {
+            padding: 10px 15px;
+            text-align: left;
+            font-size: 11px;
+            font-weight: bold;
+            color: $color-black-title;
+            border: solid 1px $color-target-demand;
+        }
+        .genre_table_tr_td {
+            border: solid 1px $color-target-demand;
+            padding: 10px 10px;
+            font-size: 11px;
+            height: 50px
+        }
+    }
+}

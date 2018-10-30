@@ -1,0 +1,72 @@
+.affiliation-agreement-preview {
+    .bg-label {
+        background-color: $color-bg-td-notice-info-detail;
+    }
+    .bg-item-yellow-light {
+        background-color: $color-bg-yellow-light-item-agreement;
+    }
+    .border-left-orange {
+        border-left: 0.4375rem solid $color-orange-primary;
+    }
+    .border-gray {
+        border: 1px solid $color-gray-light;
+    }
+    .corp_table {
+        border-bottom-style: ridge;
+        padding: .5rem;
+        .pref_sub {
+            border: 3px solid $color-border-orange-item-agreement;
+            background-color: $color-default;
+            .pref_sub1 {
+                background-color: $color-border-orange-item-agreement;
+                border-right: 2px solid $color-border-orange-item-agreement;
+                color: $color-white-primary;
+            }
+            .pref_sub1_non {
+                background-color: $color-bg-gray-item-agreement;
+                border-right: 2px solid $color-bg-gray-item-agreement;
+            }
+            .pref_sub1_part {
+                background-color: $color-bg-yellow-light-item-agreement;
+                border-right: 2px solid $color-border-orange-item-agreement;
+                color: $color-orange-primary;
+            }
+            .pref_sub3 {
+                .hover-link {
+                    cursor: pointer;
+                    background-color: $color-bg-gray-item-agreement;
+                    color: $color-white-primary;
+                    &:hover {
+                        background-color: $color-grey-light;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .affiliation-agreement-preview {
+        .corp_table {
+            padding: .5rem 10rem;
+        }
+    }
+}
+
+.affiliation-agreement-preview-modal {
+    .modal-header {
+        border: 0;
+    }
+    .modal-content {
+        border: 3px solid $color-orange-light;
+        border-radius: 0;
+    }
+    .close {
+        padding: 2px 2px 4px 4px;
+        margin: -16px -16px -16px auto;
+        color: $color-white-primary;
+        background: $color-orange-light;
+        opacity: 1;
+    }
+}

@@ -1,0 +1,68 @@
+.app-content{
+    padding-left: 0;
+    padding-right: 0;
+}
+.body-wrapper-default {
+    min-height: calc(100vh - 221px);
+
+    @media (max-width: 991px) {
+        padding-top: 4.5rem;
+    }
+
+    @media (min-width: 576px) {
+        min-height: calc(100vh - 202px);
+    }
+
+    @media (min-width: 768px) {
+        min-height: calc(100vh - 183px);
+    }
+
+    @media (min-width: 992px) {
+        min-height: calc(100vh - 241px);
+    }
+
+    >.container {
+        background-color: #f7f7f7;
+    }
+}
+
+.body-wrapper-custom-1 {
+    min-height: calc(100vh - 25px);
+}
+
+.body-wrapper-custom-2 {
+    .container {
+        max-width: 100%;
+    }
+}
+
+.header-field {
+    font-size: 0.9375rem;
+    background-color: $color-white-light;
+    padding: 10px 0;
+    margin: 0;
+    a {
+        font-weight: bold;
+        text-decoration: underline;
+    }
+    a:hover {
+        color: $color-orange-primary;
+        border-bottom: 1px solid $color-green-primary;
+    }
+}
+
+.form-category {
+    &__label {
+        font-size: 14px;
+        font-weight: bold;
+        border-bottom: 3px double $color-dark;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    &__sub-label{
+        display: block;
+        position: relative;
+        top: -16px;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,58 @@
+.progress-management-demand-detail {
+    .bg-gray-light {
+        background-color: $color-bg-gray-light-progress-demand;
+    }
+    .bg-yellow {
+        background-color: $color-yellow-primary;
+    }
+    .bg-yellow-light {
+        background-color: $color-yellow-light;
+    }
+    .bg-th {
+        background-color: $color-bg-row-admin-demand;
+    }
+    .border-gray {
+        border: 1px solid $color-gray-light;
+    }
+    .border-bottom-bold {
+        border-bottom: 2px solid $color-dark;
+    }
+    .custom-table {
+        border-collapse: separate;
+        th,
+        td {
+            border-top: none;
+        }
+        tbody {
+            tr {
+                &:nth-child(odd) {
+                    background-color: $color-bg-row-admin-demand;
+                }
+            }
+        }
+    }
+    .fix-height-select {
+        height: 1.8rem !important;
+    }
+    .field-require {
+        background-color: $color-pink-light;
+    }
+    .fixed-button {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background-color: $color-grey-primary;
+    }
+    .err-decimal,
+    .err-radio-group,
+    .err-last-checkbox {
+        color: $color-text-danger;
+    }
+    input[type=number] {
+        &::-webkit-inner-spin-button,
+        &::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    }
+}

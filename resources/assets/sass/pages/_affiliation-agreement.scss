@@ -1,0 +1,50 @@
+.affiliation-agreement {
+    .bg-label {
+        background-color: $color-bg-td-notice-info-detail;
+    }
+    .highlight-hover {
+        &:hover {
+            border-bottom: 1px solid $color-green-primary;
+        }
+    }
+    .special-title {
+        font-size: 0.9375rem;
+        border-left: 5px solid $color-grey-primary;
+        background: repeating-linear-gradient(-45deg, #deddd0, #deddd0 5px, #e7e7e2 5px, #e7e7e2 10px);
+    }
+    .notice {
+        font-size: 0.8125rem;
+        color: $color-blue-primary;
+    }
+    .guidance {
+        border-bottom: 1px solid $color-grey-primary;
+    }
+    .provisions {
+        height: 370px;
+        border: 1px solid $color-dark;
+    }
+    .agreement-provisions {
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+    .btn {
+        cursor: pointer;
+    }
+    .pseudo-scroll-bar-1, .pseudo-scroll-bar-2 {
+        position: fixed;
+        overflow: auto;
+        display: none;
+        .scroll-bar-1, .scroll-bar-2 {
+            height: 5px;
+        }
+        &::-webkit-scrollbar {
+            height: 10px;
+            background-color: rgba($color-default, 0);
+        }
+        &::-webkit-scrollbar-thumb {
+            border-radius: 5px;
+            background-color: $color-orange-light;
+            background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+        }
+    }
+}

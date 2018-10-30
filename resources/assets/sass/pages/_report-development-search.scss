@@ -1,0 +1,23 @@
+.report-development-search {
+    .bg-1 {
+        background-color: $color-bg-1-report-development-search;
+    }
+    .bg-2 {
+        background-color: $color-bg-2-report-development-search;
+    }
+    #datalist_wrapper {
+        padding: 0;
+        th,
+        td {
+            padding: .25rem;
+        }
+    }
+    .custom-pagination {
+        .pagination {
+            float: left;
+            .page-link {
+                border: none;
+            }
+        }
+    }
+}

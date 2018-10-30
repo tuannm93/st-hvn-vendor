@@ -1,0 +1,24 @@
+.alert {
+    @include border-radius(0);
+    text-align: left;
+    padding: 10px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    ul {
+        padding-left: 20px;
+        margin-bottom: 0;
+    }
+}
+.alert-danger {
+    color: $color-text-danger;
+    background-color: $color-bg-alert-default;
+    border: 2px solid $color-orange-light;
+}
+
+.alert-success {
+    color: $color-orange-light;
+    background-color: $color-bg-alert-default;
+    border: 2px solid $color-orange-light;
+}

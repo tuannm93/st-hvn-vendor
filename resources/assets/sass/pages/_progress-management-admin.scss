@@ -1,0 +1,97 @@
+.header-progress-management-admin {
+    header {
+        background-color: $color-bg-progress-admin;
+        h1 {
+            font-size: 0.875rem;
+            color: $color-white-primary;
+        }
+    }
+    footer {
+        background-color: $color-bg-progress-admin;
+    }
+}
+
+.progress-management-admin {
+    .custom-table {
+        border-collapse: separate;
+        width: 100%;
+        tbody {
+            tr {
+                &:nth-child(even) {
+                    background-color: $color-bg-row-admin-demand;
+                }
+            }
+        }
+    }
+    .border-top-bold {
+        border-top: 2px solid $color-dark;
+    }
+    .border-bottom-bold {
+        border-bottom: 2px solid $color-dark;
+    }
+    .text-warp {
+        word-wrap: break-word;
+    }
+    .pseudo-scroll-bar {
+        position: fixed;
+        overflow: auto;
+        bottom: 0;
+        display: none;
+        .scroll-bar {
+            height: 5px;
+        }
+        &::-webkit-scrollbar {
+            height: 15px;
+            background-color: rgba($color-default, 0);
+        }
+        &::-webkit-scrollbar-thumb {
+            border-radius: 5px;
+            background-color: $color-orange-light;
+            background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+        }
+    }
+    .bg-white-light {
+        background-color: $color-default;
+    }
+    .bg-yellow-light {
+        background-color: $color-bg-row-admin-demand;
+    }
+    .field-require {
+        background-color: $color-bg-require-admin-demand;
+    }
+    .status-badge {
+        background: linear-gradient(to bottom, #76BF6B, #3B8230);
+    }
+    select {
+        &.form-control {
+            &.p-1 {
+                height: 1.8rem;
+            }
+        }
+    }
+    #barSuccess {
+        display: none;
+    }
+    .bar-success {
+        font-size: 1.25rem;
+        background: linear-gradient(to bottom, #ee5f5b, #c43c35);
+    }
+    .table-responsive {
+        &.p-3 {
+            border: 1px solid $color-gray-light;
+        }
+        #addTable_body {
+            td {
+                vertical-align: middle;
+            }
+        }
+    }
+    .datepicker_limit {
+        &.form-control[readonly] {
+            background-color: #fff;
+            &.field-require {
+                background-color: #ffcccc;
+            }
+        }
+    }
+}

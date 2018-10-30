@@ -1,0 +1,27 @@
+.auction_setting_ranking {
+    padding-top: 10px;
+    h3 {
+        margin-bottom: 5px;
+        font-size: 14px;
+        font-weight: bold;
+        border-bottom: 3px double $color-dark;
+        width: 100%;
+    }
+    .content-top-main {
+        background-color: $color-bg-form-search;
+        border: 2px solid $color-border-search-box-report-jbr-receipt;
+    }
+    .bg-thead {
+        background-color: $color-yellow-light;
+    }
+    .fix-nowarp {
+        white-space: nowrap;
+    }
+    .pagination {
+        li {
+            a {
+                color: $color-orange-primary;
+            }
+        }
+    }
+}

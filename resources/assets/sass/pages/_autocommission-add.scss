@@ -1,0 +1,15 @@
+.autocommission-add {
+    #corp_id {
+        height: 200px;
+        overflow-y: scroll;
+        border: 1px solid $color-grey-light;
+    }
+    .fa-check-circle {
+        color: $color-green-primary;
+        font-size: 1rem;
+    }
+    .ui-state-default {
+        color: $color-dark;
+        min-height: 33px;
+    }
+}

@@ -1,0 +1,15 @@
+.auction-proposal {
+    .form-category {
+        &__label {
+            margin-bottom: 10px;
+        }
+        &__body {
+            .btn-close {
+                color: $color-dark;
+                background-color: $color-gray-light;
+                font-weight: bold;
+                width: 110px;
+            }
+        }
+    }
+}

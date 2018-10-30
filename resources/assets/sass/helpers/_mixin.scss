@@ -1,0 +1,33 @@
+@mixin transition($property, $effect, $duration) {
+  -webkit-transition: $property $effect $duration;
+  -moz-transition: $property $effect $duration;
+  -ms-transition: $property $effect $duration;
+  -o-transition: $property $effect $duration;
+  transition: $property $effect $duration;
+}
+
+@mixin border-radius($unit) {
+  -webkit-border-radius: $unit;
+  -moz-border-radius: $unit;
+  border-radius: $unit;
+}
+
+@mixin box-shadow($unit) {
+  -webkit-box-shadow: $unit;
+  -moz-box-shadow: $unit;
+  box-shadow: $unit;
+}
+
+@mixin transform($unit) {
+  transform: $unit;
+  -moz-transform: $unit;
+  -webkit-transform: $unit;
+  -o-transform: $unit;
+  -ms-transform: $unit;
+}
+
+@mixin align-items($pos) {
+    -webkit-box-align: $pos;
+    -ms-flex-align: $pos;
+    align-items: $pos;
+}

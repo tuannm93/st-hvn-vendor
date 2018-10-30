@@ -1,0 +1,1 @@
+<div class="text-center pt-3">{{ trans('progress_management.search_empty') }}</div>

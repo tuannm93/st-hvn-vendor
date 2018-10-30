@@ -1,0 +1,33 @@
+.affiliation{
+  .form-category{
+    &__body{
+        .form-group{
+          .form-link{
+            display: inline-block;
+            word-break: break-word;
+            line-height: 1.5;
+            padding: 0.375rem 0;
+            color: $color-orange-primary;
+          }
+          textarea{
+            resize: vertical;
+          }
+          .form-group__sub-label {
+              top: 8.5px;
+          }
+        }
+    }
+  }
+  .form-btn{
+    min-width: 120px;
+    margin: 0 4px;
+  }
+
+    .error-holder {
+
+        label {
+            @include align-items(start);
+            justify-content: start;
+        }
+    }
+}

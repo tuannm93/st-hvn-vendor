@@ -1,0 +1,56 @@
+.notice-info-near {
+    .notice-info-badge {
+        background-color: $color-bg-badge-notice-info-detail;
+    }
+    .bg-green-light {
+        background-color: $color-green-light
+    }
+    .text-orange {
+        color: $color-orange-primary;
+    }
+    .text-red {
+        color: $color-text-danger;
+    }
+    .open-collapse {
+        cursor: pointer;
+    }
+    .pseudo-scroll-bar {
+        position: fixed;
+        overflow: auto;
+        .scroll-bar {
+            width: 570px;
+            height: 5px;
+        }
+        &::-webkit-scrollbar {
+            height: 10px;
+            background-color: rgba($color-default, 0);
+        }
+        &::-webkit-scrollbar-thumb {
+            border-radius: 5px;
+            background-color: $color-orange-light;
+            background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+        }
+    }
+    .not_correspond_count_0,
+    .not_correspond_count_1,
+    .not_correspond_count_2,
+    .not_correspond_count_3 {
+        font-weight: bold;
+        line-height: 1.5rem;
+        margin-bottom: 0;
+    }
+    .not_correspond_count_0,
+    .not_correspond_count_1 {
+        color: $color-text-danger;
+    }
+    .not_correspond_count_2 {
+        color: $color-orange-primary;
+    }
+    .light-border {
+        .custom-border {
+            th, td {
+                border: 1px solid $color-border-td-table-progress-index;
+            }
+        }
+    }
+}

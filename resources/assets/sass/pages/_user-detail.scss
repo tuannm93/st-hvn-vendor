@@ -1,0 +1,83 @@
+.user-detail {
+    .form-category {
+        &__body {
+            .form-group {
+                label {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .modal {
+        .modal-dialog {
+            .modal-content {
+                .modal-body {
+                    .table-responsive {
+                        height: 50vh;
+                        .list-data {
+                            tr {
+                                td {
+                                    padding-bottom: .25rem;
+                                    padding-top: .25rem;
+                                    &:first-child {
+                                        a, a:hover, a:active {
+                                            color: $color-orange-primary;
+                                            text-decoration: underline;
+                                        }
+                                        a:hover {
+                                            border-bottom: 1px solid $color-green-primary;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.user-search {
+    .highlight-link {
+        color: $color-orange-primary;
+        &:hover {
+            color: $color-orange-primary;
+            text-decoration: underline;
+        }
+    }
+    .table-result-search {
+        margin-top: 2rem;
+        table {
+            margin-bottom: .5rem;
+            td,
+            th {
+                border-color: grey;
+                border-width: 2px;
+                padding: 0.3rem;
+                vertical-align: middle;
+            }
+            thead {
+                th {
+                    background: $color-yellow-light;
+                }
+            }
+            tbody {
+                tr {
+                    td {
+                        &:last-child {
+                            a {
+                                color: $color-orange-primary;
+                                &:hover {
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

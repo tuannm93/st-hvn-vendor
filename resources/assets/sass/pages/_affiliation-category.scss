@@ -1,0 +1,130 @@
+.affiliation-category {
+
+  .collapse-trigger {
+    color: $color-default;
+    background-color: $color-gray-light;
+  }
+
+  .form-group {
+    @media screen and (max-width: 575px) {
+      background-color: $color-white-light;
+      border: none;
+    }
+  }
+
+  .form__label--border {
+    @media screen and (max-width: 575px) {
+      strong {
+        position: relative;
+        padding-left: 8px;
+        &:before {
+          position: absolute;
+          top: 3px;
+          content: '';
+          width: 4px;
+          height: 13px;
+          display: block;
+          background-color: $color-orange-primary;
+        }
+      }
+    }
+  }
+
+  .sub-label {
+    strong {
+      position: relative;
+      padding-left: 15px;
+      &:before {
+        position: absolute;
+        top: -1px;
+        content: '';
+        width: 8px;
+        height: 20px;
+        display: block;
+        background-color: $color-orange-primary;
+      }
+    }
+  }
+
+  .form-control {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+  }
+
+  .box-mess {
+    padding: .6rem;
+  }
+
+  .table {
+    thead {
+      white-space: nowrap;
+    }
+
+    td {
+      vertical-align: middle;
+    }
+
+    .row-divider {
+      height: 10px;
+    }
+
+    @media screen and (min-width: 992px){
+      th {
+        width: 10%;
+        &:last-child {
+          width: 20%;
+        }
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      thead {
+        display: none;
+      }
+
+      tr {
+        border-bottom: 1px solid $color-gray-light;
+        td {
+          display: grid;
+          grid-template-columns: 25% 75%;
+          align-items: center;
+          &:before {
+            content: attr(data-label);
+            margin-right: 10px;
+            padding: 5px;
+            color: $color-default;
+            background-color: $color-gray-light;
+          }
+
+          &:first-child {
+            grid-template-columns: 25% 55% 20%;
+          }
+        }
+      }
+    }
+  }
+  .area_line_group {
+    .pref_sub {
+      margin: 5px 5px;
+      border: solid 3px #f3a12d;
+      width: auto;
+      .pref_sub1 {
+        color: #fff;
+        background-color: #f3a12d;
+        border-right: solid 2px #f3a12d;
+        font-weight: bold;
+        width: 62px;
+      }
+      .pref_sub2 {
+        font-weight: bold;
+        width: 104px;
+      }
+      .pref_sub3 {
+        a {
+          background: #bbbbbb;
+        }
+      }
+    }
+  }
+}

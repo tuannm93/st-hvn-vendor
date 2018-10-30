@@ -1,0 +1,30 @@
+<?php
+
+return [
+    'insert_done' => 'insert_done',
+    'created' => '登録が完了しました。',
+    'required' => '必須入力です。',
+    'same_password' => 'パスワードとパスワード確認が一致しません。',
+    'max_length_field' => '許容文字数を超えました',
+    'unique_id' => '既に使用されています。',
+    'user_id_regex' => '半角英数字で入力してください。',
+    'password_regex' => 'パスワードとして使用できない文字が入力されています。',
+    'system' => 'システム管理者',
+    'admin' => '管理者',
+    'popular' => '一般',
+    'affiliation' => '加盟店',
+    'accounting_admin' => '経理管理者',
+    'accounting' => '経理一般',
+    'input_require' => '必須入力',
+    'info_user' => 'ユーザー情報',
+    'user_id' => 'ユーザーID',
+    'user_name' => 'ユーザー名',
+    'password' => 'パスワード',
+    're_password' => 'パスワード確認',
+    'business' => '権限',
+    'cancel' => 'キャンセル',
+    'register' => '登録',
+    'store' => '加盟店',
+    'customer_name_search' => '加盟店検索',
+    'updated' => '更新が完了しました。'
+];

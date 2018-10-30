@@ -1,0 +1,22 @@
+.selection {
+    .title-selection {
+        margin-bottom: 5px;
+        font-size: 14px;
+        border-bottom: 3px double #000;
+        width: 100%;
+        font-weight: bold;
+    }
+    .highlight-link {
+        color: #f27b07;
+    }
+    .fix-color-label-selection {
+        color: #000!important;
+    }
+}
+@media screen and (min-width: 992px) {
+    .selection {
+        .fix-width-120 {
+            width: 125px;
+        }
+    }
+}

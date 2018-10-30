@@ -1,0 +1,25 @@
+<?php
+return [
+    'search_condition' => '検索条件',
+    'search_btn' => '検 索',
+    'payment_history_information' => '入金履歴情報',
+    'deposit_date' => '入金日',
+    'nominee' => '名義人',
+    'deposit_amount' => '入金金額',
+    'yen' => '円',
+    'yen2' => '¥',
+    'cancel' => 'キャンセル',
+    'registration' => '登録',
+    'delete' => '削除',
+    'prev' => '< 前ページ',
+    'next' => '次ページ >',
+    'close' => '閉じる',
+    'confirm_remove' => '削除しても宜しいですか？',
+    'success_create_deposit' => '更新が完了しました。',
+    'error_create_deposit' => '入力項目を確認してください。',
+
+    'required' => '必須入力です。',
+    'invalid_date' => '日付時間形式で入力してください。',
+    'invalid_numeric' => '半角数字で入力してください。',
+    'not_found_data_search' => 'データが見つけません 。',
+];

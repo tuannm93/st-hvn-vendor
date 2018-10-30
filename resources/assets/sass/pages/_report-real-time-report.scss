@@ -1,0 +1,11 @@
+.report-real-time-report {
+    .bg-yellow-light {
+        background-color: $color-yellow-light;
+    }
+    .custom-border {
+        border-collapse: collapse;
+        .item {
+            border: 2px solid $color-border-td-table-progress-index;
+        }
+    }
+}

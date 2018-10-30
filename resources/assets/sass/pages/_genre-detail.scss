@@ -1,0 +1,24 @@
+.genre-detail {
+    .text-yellow {
+        color: $color-text-small;
+    }
+    .note {
+        top: .5rem;
+    }
+    small {
+        font-size: 90%;
+        padding-bottom: 0.2rem;
+    }
+    input:not([type="submit"]) {
+        width: 3.75rem !important;
+    }
+    [class~="btn"] {
+        width: 7rem;
+    }
+    .invalid-feedback, .form-control-feedback {
+        margin-bottom: 0;
+    }
+    .form-control-feedback {
+        font-size: 0.87em;
+    }
+}

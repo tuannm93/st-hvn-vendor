@@ -1,0 +1,20 @@
+<?php
+return [
+    'title' => '(JBR様案件)取次前一覧',
+    'follow_day' => '後追い日',
+    'required_day' => '連絡希望<br/>日時',
+    'access_day' => '訪問日時',
+    'commission_rank' => 'ジャンルランク',
+    'website_name' => 'サイト名',
+    'customer_name' => 'お客様名',
+    'proposal_number' => '案件番号',
+    'partner_1' => '取次先1',
+    'procedure_dial' => '取次用ダイヤル',
+    'available_time' => '連絡可能時間',
+    'holiday' => '休業日',
+    'initial_check' => '初取次<br/>チェック',
+    'last_history_update' => '最終履歴<br/>更新者',
+    'history_update_time' => '履歴更新時間',
+    'bid_drop' => '入札落ち',
+    'automatic_selection' => '自動選定',
+];

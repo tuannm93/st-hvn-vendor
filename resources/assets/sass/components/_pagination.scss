@@ -1,0 +1,40 @@
+.pagination-default {
+    padding-top: 10px;
+    .page-item {
+        &:not(:last-child) {
+            padding-right: 5px;
+        }
+        &.page-current {
+            .page-link {
+                background-color: $color-default;
+                color: gray;
+                pointer-events: none;
+                cursor: default;
+                text-decoration: none;
+            }
+        }
+        .page-link {
+            background-color: gray;
+            color: $color-default;
+            border: 2px solid gray;
+        }
+    }
+}
+
+.dataTables_paginate {
+    margin-left: 15px;
+    a {
+        &:hover {
+            text-decoration: none;
+            color: $color-orange-primary;
+        }
+        &.active {
+            color: $color-orange-primary;
+            cursor: pointer;
+        }
+        &.disabled {
+            color: black;
+            cursor: no-drop;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.bg-white-light {
+    background-color: $color-default !important;
+}
+.bg-note {
+    background-color: #fffaf3;
+}
+
+.bg-primary {
+    background-color: $color-orange-primary;
+}
+
+.bg-primary-lighter {
+    background-color: $color-orange-lighter;
+}
+
+.bg-yellow-light {
+    background-color: $color-yellow-lighter;
+}
+
+.bg-gray-light {
+    background-color: $color-gray-light;
+}
+.table {
+    &.custom-border {
+        .bg-yellow-light {
+            background-color: $color-yellow-light;
+        }
+    }
+}

@@ -1,0 +1,131 @@
+// Mixin border menu
+@mixin border {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 30px;
+  background-color: $color-white-light;
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+  opacity: .5;
+}
+
+.navbar-expand-lg {
+  @media (max-width: 991px) {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+  border-top: 4px solid $color-grey-primary;
+  padding: 8px 0;
+
+  >.container {
+    border-bottom: 4px solid $color-yellow-primary;
+  }
+
+  @media (min-width: 992px) {
+    flex-direction: column;
+
+    >.container {
+      border-bottom: 0;
+    }
+  }
+  .navbar-brand {
+    max-width: 70px;
+
+    @media (min-width: 576px) {
+      max-width: 70px;
+    }
+
+    @media (min-width: 992px) {
+      max-width: 180px;
+    }
+  }
+  .navbar-text {
+    list-style: none;
+    font-size: 11px;
+    color: $color-grey-primary;
+    background-color: $color-white-light;
+    padding: 10px;
+    width: 250px;
+    a {
+      text-decoration: underline;
+      color: $brand-primary !important;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  .navbar-collapse {
+    background: $color-grey-primary;
+    //@media (min-width: 992px) {
+    //  background: $color-gradient-orange;
+    //}
+  }
+  .navbar-nav {
+    @media (min-width: 992px) {
+      line-height: 50px;
+      height: 50px;
+      li {
+        position: relative;
+        &:after {
+          @include border;
+          right: 0;
+        }
+        &:first-child {
+          &:before {
+            @include border;
+            left: 0;
+          }
+        }
+        .new-icon {
+          bottom: 0;
+          right: 0;
+          position: absolute;
+          webkit-animation: blink 1.0s ease-in-out infinite alternate;
+          -moz-animation: blink 1.0s ease-in-out infinite alternate;
+          animation: blink 1.0s ease-in-out infinite alternate;
+        }
+        @-webkit-keyframes blink{
+          0% {opacity:0;}
+          100% {opacity:1;}
+        }
+        @-moz-keyframes blink{
+          0% {opacity:0;}
+          100% {opacity:1;}
+        }
+        @keyframes blink{
+          0% {opacity:0;}
+          100% {opacity:1;}
+        }
+      }
+    }
+    a {
+      display: block;
+      padding: 10px 0;
+      color: $color-default;
+      text-decoration: none;
+      @media (min-width: 992px) {
+        padding: 0 20px;
+      }
+      &:hover {
+        opacity: .6;
+      }
+    }
+  }
+}
+
+.kameiten-notice {
+  text-align: right;
+  a {
+    text-decoration: underline;
+    color: $color-orange-primary;
+    font-weight: 700;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

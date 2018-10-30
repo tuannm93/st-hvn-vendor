@@ -1,0 +1,91 @@
+.affiliation-corptargetarea {
+    .corp_table {
+        border-bottom-style: ridge;
+        .pref_sub {
+            border: 3px solid $color-border-orange-item-agreement;
+            background-color: $color-default;
+            .pref_sub1 {
+                background-color: $color-border-orange-item-agreement;
+                border-right: 2px solid $color-border-orange-item-agreement;
+                color: $color-white-primary;
+            }
+            .pref_sub1_non {
+                background-color: $color-bg-gray-item-agreement;
+                border-right: 2px solid $color-bg-gray-item-agreement;
+            }
+            .pref_sub1_part {
+                background-color: $color-bg-yellow-light-item-agreement;
+                border-right: 2px solid $color-border-orange-item-agreement;
+                color: $color-orange-primary;
+            }
+            .pref_sub3 {
+                .highlight-link {
+                    cursor: pointer;
+                    background-color: $color-bg-gray-item-agreement;
+                    color: $color-white-primary;
+                    &:hover {
+                        background-color: $color-grey-light;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+    h6.border_left_orange {
+        border-left: 5px solid $color-orange-primary;
+    }
+    p.orange_right_block {
+        color: $color-orange-primary;
+        border: 2px solid $color-orange-primary;
+    }
+    .genre_contents {
+        background-color: $color-yellow-light;
+        .select_genre_sub2 {
+            border: 2px solid $color-orange-primary;
+            background-color: $color-white-primary;
+            .highlight-link {
+                display: inline-block;
+                color: $color-orange-primary;
+                 :hover {
+                    color: $color-white-primary;
+                    text-decoration: none;
+                }
+            }
+        }
+        .select_genre_sub2_btn {
+            &:hover {
+                background-color: $color-orange-primary;
+                .highlight-link {
+                    color: $color-white-primary;
+                }
+            }
+        }
+    }
+    input#regist-base-update {
+        border: 0;
+        font-size: 0.875rem;
+        color: $color-white-primary;
+        cursor: pointer;
+    }
+}
+
+.affiliation-corptargetarea-modal {
+    .modal-header {
+        border: 0;
+    }
+    .modal-content {
+        border: 3px solid $color-orange-light;
+        border-radius: 0;
+        #display_modal_area {
+            height: 50vh;
+            overflow-y: auto;
+        }
+    }
+    .close {
+        padding: 2px 2px 4px 4px;
+        margin: -4px -4px -16px auto;
+        color: $color-white-primary;
+        background: $color-orange-light;
+        opacity: 1;
+    }
+}

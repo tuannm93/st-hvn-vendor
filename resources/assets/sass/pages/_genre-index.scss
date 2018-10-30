@@ -1,0 +1,77 @@
+.genre-index {
+    .unit-price-feedback {
+        label {
+            margin-bottom: 0;
+        }
+    }
+    .form-category {
+        &__label {
+            font-size: 1rem;
+            font-weight: normal;
+        }
+        &__item {
+            .border_left_orange {
+                border-left: solid 8px $color-orange-primary;
+                padding: 0px 10px;
+                font-weight: bold;
+                margin: 20px 0px;
+            }
+            .block-header {
+                .item-header {
+                    padding: 0px 2px;
+                    table {
+                        border: 1px solid $color-border-table-back;
+                        border-collapse: inherit;
+                        border-spacing: 0;
+                        thead {
+                            th {
+                                vertical-align: middle;
+                                background-color: $color-bg-thead;
+                            }
+                        }
+                    }
+                }
+            }
+            .block-item {
+                padding: 0px 2px;
+                .table-genre {
+                    border: 1px solid $color-border-table-back;
+                    border-collapse: inherit;
+                    border-spacing: 0;
+                    tbody {
+                        tr {
+                            td {
+                                vertical-align: middle;
+                                &.bg-pink {
+                                    background-color: $color-bg-td-pink !important;
+                                }
+                            }
+                            &:not(:first-child) {
+                                td:first-child {
+                                    background-color: $color-bg-thead;
+                                }
+                            }
+                            &:first-of-type {
+                                td {
+                                    height: 5.125rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 575.98px) {
+        .item-hearder-2, .item-hearder-3 {
+            display: none !important;
+        }
+    }
+
+    @media only screen and (min-width: 576px) and (max-width: 767.98px) {
+        .item-hearder-3 {
+            display: none !important;
+        }
+    }
+}

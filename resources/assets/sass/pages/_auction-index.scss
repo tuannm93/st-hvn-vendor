@@ -1,0 +1,24 @@
+.auction-index {
+    .form-category {
+        &__label {
+            margin-bottom: .8rem;
+        }
+        .form-inline {
+            .case-title {
+                width: 9.375rem;
+            }
+        }
+    }
+    button {
+        width: 6.25rem;
+    }
+    .input-small {
+        width: 4rem;
+        padding: 1.5px 4px;
+    }
+    .invalid-feedback {
+        margin-top: 0;
+        margin-bottom: 0;
+        justify-content: left;
+    }
+}

@@ -1,0 +1,127 @@
+.commission-detail {
+    .collapse-trigger {
+        color: $color-default;
+        background-color: $color-gray-light;
+    }
+
+    .form-note {
+        font-weight: 700;
+    }
+
+
+    @media screen and(max-width: 767px){
+        .form-note {
+            border: none;
+            font-size: 1rem;
+            background: $color-grey-light;
+            padding: .5rem;
+            margin-bottom: 0;
+            font-weight: 400;
+        }
+
+        .customer-table {
+            border: none;
+            margin: 0;
+            th {
+                display: none;
+            }
+
+            td {
+                display: grid;
+                grid-template-columns: 40% 60%;
+                border: none;
+                padding-left: 0;
+                padding-right: 0;
+
+                &:before {
+                    content: attr(data-label);
+                    display: block;
+                    margin-right: 10px;
+                    padding-left: 5px;
+                    border-left: 0.4375rem solid #f27b07;
+                    font-weight: 700;
+                }
+
+                &.last {
+                    grid-template-columns: 100%;
+                }
+            }
+        }
+
+        form {
+            .card {
+                .card-header {
+                    color: $color-default;
+                    background-color: $color-orange-light;
+                }
+            }
+        }
+    }
+
+    .commission-detail-popup {
+        .modal-content {
+            border: 3px solid $color-border-commission-modal-content;
+            background-color: $color-bg-alert-default;
+        }
+        .modal-title {
+            color: #f27b07;
+        }
+        .modal-header {
+            border-bottom: 0px;
+        }
+        .modal-dialog {
+            max-width: 600px;
+            margin: 30px auto;
+        }
+    }
+
+    .table-fixed {
+        tbody {
+            max-height: 180px;
+            overflow-y: auto;
+        }
+
+        th, td {
+            width: 195px;
+            word-break: break-all;
+        }
+
+        @media screen and (max-width: 767px){
+            th, td {
+                width: 80px;
+            }
+        }
+    }
+
+    .approval-data {
+        max-height: 415px;
+        overflow-y: auto;
+    }
+    .letter-spacing {
+        letter-spacing: 2px;
+    }
+    .animate {
+        animation: pulse 1s infinite;
+    }
+    .comission-input-file {
+        position: absolute;
+        opacity: 0;
+        height: 32px;
+    }
+}
+.commission-detail-modal {
+    .modal-content {
+        border: 3px solid $color-orange-light;
+        border-radius: 0;
+    }
+    .close {
+        padding: 2px 2px 4px 4px;
+        margin: -16px -16px -16px auto;
+        color: $color-white-primary;
+        background: $color-orange-light;
+        opacity: 1;
+    }
+}
+#application_reason-error{
+    position: absolute;
+}

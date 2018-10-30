@@ -1,0 +1,20 @@
+.auction-exclusion {
+    .btn {
+        width: 9.375rem;
+    }
+    .timepicker {
+        width: 6.25rem;
+    }
+    input[type=text] {
+        height: 24px;
+    }
+    .template-title {
+        width: 9rem;
+    }
+    .invalid-feedback {
+        justify-content: left;
+    }
+    .fail_time_feedback {
+        margin-left: -.35rem;
+    }
+}

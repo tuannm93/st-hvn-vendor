@@ -1,0 +1,103 @@
+.btn {
+    &.btn-primary {
+        background-color: $color-orange-primary;
+        border-color: $color-orange-primary;
+        color: $color-default;
+        &:not(:disabled):not(.disabled) {
+            &:hover {
+                background-color: lighten($color-orange-primary, 10%);
+                border-color: lighten($color-orange-primary, 10%);
+            }
+        }
+    }
+    &.btn-outline-primary {
+        border-color: $color-orange-primary;
+        color: $color-orange-primary;
+        &:not(:disabled):not(.disabled) {
+            &:hover {
+                background-color: lighten($color-orange-primary, 10%);
+                border-color: lighten($color-orange-primary, 10%);
+                color: white !important;
+            }
+        }
+    }
+    &.btn-secondary {
+        background-color: $color-blue-light;
+        border-color: $color-blue-light;
+        color: $color-default;
+        &:hover {
+            color: $color-default;
+            background-color: lighten($color-blue-light, 10%);
+            border-color: lighten($color-blue-light, 10%);
+        }
+    }
+    &.btn-default {
+        background-color: $color-gray-light;
+        border-color: $color-gray-light;
+        color: $color-grey-primary;
+        &:hover {
+            background-color: lighten($color-gray-light, 10%);
+            border-color: lighten($color-gray-light, 10%);
+            color: $color-grey-primary;
+        }
+    }
+    &.remove-effect-btn {
+        &:focus,
+        &:active {
+            opacity: 1;
+            @include box-shadow(0 0 0 0.2rem rgba($color-default, 0));
+        }
+    }
+    &--decoration-none {
+        text-decoration: none;
+    }
+    &--gradient-orange {
+        background: $color-gradient-orange-light !important;
+        color: $color-default;
+        font-weight: bold;
+        &:hover {
+            opacity: .6;
+            color: $color-default;
+        }
+    }
+    &--gradient-green {
+        background: $color-gradient-green !important;
+        color: $color-default;
+        font-weight: bold;
+        &:hover {
+            opacity: .6;
+            color: $color-default;
+        }
+    }
+    &--gradient-default {
+        background: $color-gradient-default !important;
+        font-weight: bold;
+        color: $color-white-light;
+        border: 1px solid $color-table;
+        &:hover {
+            opacity: .6;
+            color: $color-white-light;
+        }
+    }
+    &--gradient-red {
+        background: $color-gradient-red !important;
+        color: $color-default;
+        font-weight: bold;
+        &:hover {
+            opacity: .6;
+            color: $color-default;
+        }
+    }
+    &--gradient-gray {
+        color: $color-default !important;
+        background: $color-gradient-default;
+        font-weight: bold;
+        &:hover {
+            opacity: .6;
+            color: $color-default;
+        }
+    }
+    &--w-normal{
+        min-width: 100px;
+    }
+}

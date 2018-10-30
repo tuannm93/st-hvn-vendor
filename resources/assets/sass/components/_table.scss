@@ -1,0 +1,18 @@
+.table-list {
+    thead {
+        th {
+            background-color: $color-orange-lighter;
+            text-align: center;
+            vertical-align: middle;
+            border-color: $color-blue-darken;
+            &.min-width-115{
+                min-width: 115px;
+            }
+            .sortInner {
+                color: $color-orange-primary;
+                cursor: pointer;
+                display: inline-block;
+            }
+        }
+    }
+}

@@ -1,0 +1,52 @@
+textarea {
+    &.fixed {
+        resize: none; 
+    }
+}
+
+.w-16-7 {
+    width: calc(100%/6);
+}
+
+.w-33-33 {
+    width: calc(100%/3);
+}
+
+.w-66-67 {
+    width: calc(200%/3);
+}
+
+.link-primary {
+    color: $color-orange-primary !important;
+}
+
+.ui-multiselect-all,
+.ui-multiselect-none {
+    color: $color-dark !important;
+}
+.triangle-up,
+.triangle-down {
+    width: 0;
+    height: 0;
+    border-left: .4rem solid transparent;
+    border-right: .4rem solid transparent;
+    display: inline-block;
+    cursor: pointer;
+}
+.triangle-up {
+    border-bottom: 0.7rem solid $color-orange-primary;
+}
+.triangle-down {
+    border-top: 0.7rem solid $color-orange-primary;
+}
+.highlight-link {
+    color: $color-orange-primary;
+    &:hover {
+        color: $color-orange-primary;
+        text-decoration: none;
+    }
+}
+.opacity-0 {
+    opacity: 0;
+    cursor: context-menu;
+}

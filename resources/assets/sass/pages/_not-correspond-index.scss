@@ -1,0 +1,27 @@
+.not-correspond-index {
+    .custom-err {
+        display: contents;
+        .invalid-feedback {
+            -webkit-box-align: start;
+            -ms-flex-align: start;
+            align-items: start;
+            -webkit-box-pack: start;
+            -ms-flex-pack: start;
+            justify-content: start;
+        }
+    }
+    .text-orange {
+        color: $color-orange-primary;
+    }
+    .text-red {
+        color: $color-text-danger;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .not-correspond-index {
+        .w-sm-20 {
+            width: 20% !important;
+        }
+    }
+}

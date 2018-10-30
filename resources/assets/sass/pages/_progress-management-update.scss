@@ -1,0 +1,73 @@
+.edit-progressment {
+    .header-title {
+        background: $color-bg-progress-admin;
+        color: $color-default;
+        padding: 10px 20px;
+        h1 {
+            line-height: 20px;
+            background: $color-bg-progress-admin;
+            color: $color-default;
+            font-size: 100%;
+        }
+    }
+    .main-title {
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    p {
+        padding: 10px;
+    }
+    .commonTbl{
+        tr{
+            th{
+                background-color:$color-yellow-light;
+                border: 2px solid $color-border-td-table-progress-index;
+                .align-middle{
+                    vertical-align: middle !important
+                }
+            }
+            td{
+                border: 2px solid $color-border-td-table-progress-index;
+            }
+        }
+    }
+
+    .common-table-second {
+        tr{
+            th{
+                background-color: $color-yellow-light;
+                border: 2px solid $color-border-td-table-progress-index;
+                .align-middle{
+                    vertical-align: middle !important
+                }
+            }
+            td{
+                border: 2px solid $color-border-td-table-progress-index;
+            }
+        }
+    }
+    .sub-title{
+        background-color:$color-button-progress-edit;
+        box-sizing: border-box;
+        border-radius: 5px;
+    }
+    .border-box {
+        height: auto;
+        margin: 15px auto 0px;
+        border: 1px solid $color-table;
+        background: none repeat scroll 0% 0% $color-bg-row-admin-demand;
+        .notice {
+            color: $color-dark;
+            display: block;
+            font-size: 120%;
+            padding: 0.8em;
+            margin: 1em 0;
+            background: $color-notice-edit-progressment;
+            background-repeat: repeat-x;
+        }
+        @media screen and (min-width: 576px) {
+            width: 50%;
+        }
+    }
+}

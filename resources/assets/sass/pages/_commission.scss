@@ -1,0 +1,85 @@
+.commission {
+    .customer-table {
+        tr {
+            th {
+                background-color: #f5f5f5;
+                border-bottom: 1px #e1e1e1 solid;
+                text-align: left;
+            }
+        }
+        .contactCont {
+            background-color: #c6c6c6;
+            color: #fff;
+            font-weight: bold;
+        }
+    }
+    form {
+        .card {
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            border-radius: 0;
+            .card-header {
+                cursor: pointer;
+                position: relative;
+                &--bg-1 {
+                    background-color: #FFD8C1;
+                }
+                &--bg-2 {
+                    background-color: #AED0FF;
+                }
+                &--bg-3 {
+                    background-color: #FFD1D1;
+                }
+                .card-header__icon {
+                    position: absolute;
+                    right: 10px;
+                    top: 50%;
+                    -webkit-transform: translateY(-50%);
+                    -moz-transform: translateY(-50%);
+                    -ms-transform: translateY(-50%);
+                    -o-transform: translateY(-50%);
+                    transform: translateY(-50%);
+                }
+            }
+        }
+    }
+    .ui-state-default {
+        color: $color-dark;
+        min-height: 33px;
+    }
+    .custom-scroll-x {
+        &::-webkit-scrollbar {
+            background-color: $color-yellow-lighter;
+        }
+        &.bg-scroll-white {
+            &::-webkit-scrollbar {
+                background-color: $color-default;
+            }
+        }
+    }
+    .bg-yellow {
+        background-color: $color-bg-changed-report-corp-agreement-category;
+    }
+    .bg-body-card-1 {
+        background-color: $color-yellow-lighter;
+    }
+    .bg-body-card-2 {
+        background-color: #F0FAFF;
+    }
+    .bg-body-card-3 {
+        background-color: #FFF2F8;
+    }
+    &__notice {
+        margin-left: 20%;
+        @media screen and(max-width: 767px){
+            margin: 0 30px;
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .commission {
+        .border-left-orange-mobi {
+            border-left: 0.4375rem solid #f27b07;
+        }
+    }
+}

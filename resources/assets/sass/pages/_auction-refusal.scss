@@ -1,0 +1,21 @@
+.auction-refusal {
+    .btn-close {
+        color: $color-dark;
+        background-color: $color-gray-light;
+        font-weight: bold;
+    }
+    .deal-already {
+        .orange {
+            color: $color-orange-primary;
+        }
+        small {
+            font-size: 85%;
+        }
+    }
+}
+.close-refusalModal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+}

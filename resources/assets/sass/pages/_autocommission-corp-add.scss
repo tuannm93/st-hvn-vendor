@@ -1,0 +1,48 @@
+.autocommission-corp-add {
+    #selection-1 {
+        .header {
+            background-color: $color-pink-primary;
+        }
+        .body {
+            background-color: $color-bg-body-1-autocommission-corp-add;
+        }
+    }
+    #selection-2 {
+        .header {
+            background-color: $color-coban-primary;
+        }
+        .body {
+            background-color: $color-bg-body-2-autocommission-corp-add;
+        }
+    }
+    #selection-3 {
+        .header {
+            background-color: $color-gray-light;
+        }
+    }
+    .link-orange {
+        color: $color-orange-primary;
+        text-decoration: underline;
+        &:hover {
+            color: $color-orange-primary;
+        }
+    }
+    .fa-check-circle {
+        color: $color-green-primary;
+    }
+    .triangle-up {
+        border-bottom: 0.7rem solid $color-default;
+    }
+    .triangle-down {
+        border-top: 0.7rem solid $color-default;
+    }
+    .border-bold {
+        border: 2px solid $color-border-td-table-progress-index;
+    }
+    .border-right-bold {
+        border-right: 2px solid $color-border-td-table-progress-index;
+    }
+    .bg-yellow-light {
+        background-color: $color-yellow-light;
+    }
+}

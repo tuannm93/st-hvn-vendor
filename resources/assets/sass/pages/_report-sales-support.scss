@@ -1,0 +1,22 @@
+.report-sales-support {
+    .highlight-link {
+        color: $color-orange-primary;
+        &:hover {
+            color: $color-orange-primary;
+            text-decoration: underline;
+        }
+    }
+    .title-head {
+        margin-bottom: 5px;
+        font-size: 14px;
+        border-bottom: 3px double #000000;
+        width: 100%;
+        font-weight: bold;
+        padding: 5px 0;
+        text-indent: 5px;
+    }
+
+    .ui-multiselect {
+        color: #333;
+    }
+}

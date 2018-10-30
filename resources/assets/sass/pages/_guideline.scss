@@ -1,0 +1,18 @@
+.guideline {
+    *{
+        color: $color-text-gray;
+    }
+    .text-header {
+        border-bottom: 1px solid $color-text-gray;
+    }
+    .text-group {
+        border-left: 7px solid $color-border-text-gray;
+        padding-left: 7px;
+        padding-top: 3px;
+    }
+    .box {
+        border: 1px solid $color-text-gray;
+        display: inline-block;
+        width: 250px;
+    }
+}

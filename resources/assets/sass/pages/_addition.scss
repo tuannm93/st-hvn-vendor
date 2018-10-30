@@ -1,0 +1,127 @@
+#addition-index {
+    .form-category {
+        padding-top: 5px;
+        margin-top: 30px;
+        &__body {
+            padding-top: 15px;
+            .form-group>label,
+            .form-group>div {
+                margin-top: auto;
+                margin-bottom: auto;
+                &.yen-label {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 667px) {
+        .form-category {
+            margin-top: 10px;
+            &__label {
+                border-bottom: none;
+                background: $color-gray-light;
+                padding: 5px;
+                margin-bottom: 0;
+                color: $color-label-category;
+                font-weight: bold;
+                &__collapse {
+                    padding-right: 5px;
+                    color: $color-label-category;
+                }
+            }
+            &__body {
+                padding: 10px;
+                background: $color-bg-form-category-body;
+                .table {
+                    display: table;
+                    margin-bottom: 0;
+                    border: none;
+                    tr {
+                        th {
+                            display: none;
+                        }
+                        td {
+                            margin: 0;
+                            position: relative;
+                            padding: 0.5rem;
+                            padding-bottom: 0.2rem;
+                            display: grid;
+                            grid-template-columns: 45% 55%;
+                            border-top: none;
+                            border-bottom-width: 1px;
+                            &:not(:nth-last-child(2)) {
+                                border-bottom: none;
+                            }
+                            &::before {
+                                content: attr(data-label);
+                            }
+                            &:first-child {
+                                background: $color-bg-header-table-m;
+                                border: none;
+                                color: $color-label-category;
+                                font-weight: bold;
+                                text-align: left;
+                            }
+                            &:last-child {
+                                display: none;
+                            }
+                            &::before {
+                                font-weight: bold;
+                            }
+                            &:not(:first-child) {
+                                border-left-width: 1px;
+                                &::before {
+                                    border-left: 3px solid $color-bg-header-table-m;
+                                    padding-left: 5px;
+                                    min-height: 17px;
+                                }
+                            }
+                            div {
+                                position: absolute;
+                                width: calc(100% - 1rem);
+                                height: 1px;
+                                background: $color-border-table-gray;
+                                bottom: -2px;
+                                left: .5rem;
+                            }
+                        }
+                    }
+                    &__text-align {
+                        text-align: left;
+                    }
+                }
+                .form-group {
+                    label {
+                        &:first-child {
+                            &::before {
+                                content: '';
+                                border-left: 5px solid $color-bg-header-table-m;
+                                padding-left: 5px;
+                            }
+                            font-weight: bold;
+                        }
+                    }
+                    &:last-child {
+                        padding-left: 15px;
+                        padding-right: 15px;
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (min-width: 668px) {
+        .form-category {
+            .collapse {
+                display: block;
+            }
+            &__label {
+                &__collapse {
+                    display: none;
+                }
+            }
+            .pagination-additon {
+                display: none;
+            }
+        }
+    }
+}

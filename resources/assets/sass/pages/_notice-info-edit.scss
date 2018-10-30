@@ -1,0 +1,22 @@
+.notice-info-edit {
+    .notice-info-badge {
+        background-color: $color-bg-badge-notice-info-edit;
+        font-size: 0.875rem;
+    }
+    .notice-info-border {
+        border: 1px solid $color-gray-light;
+    }
+    .border-dash {
+        border: 1px dashed $color-dark;
+    }
+}
+
+.notice-info-edit-readonly {
+    .notice-info-badge {
+        background-color: $color-bg-badge-notice-info-edit;
+        font-size: 0.875rem;
+    }
+    .bg-yellow-light {
+        background-color: $color-yellow-light;
+    }
+}

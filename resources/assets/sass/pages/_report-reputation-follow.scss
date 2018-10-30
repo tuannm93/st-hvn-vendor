@@ -1,0 +1,13 @@
+.report-reputation-follow {
+    .bg-hover-row {
+        &:hover {
+            background-color: $color-yellow-light;
+        }
+    }
+    .btn-pagination {
+        cursor: pointer;
+        &.active {
+            color: $color-orange-primary;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.demand-list {
+    .form-container {
+        label {
+            justify-content: left;
+        }
+    }
+    .custome-label {
+        &::before,
+        &::after {
+            border: 1px solid $color-gray-light;
+            border-radius: 3px;
+        }
+    }
+    .bg-condition {
+        background-color: $color-bg-body-2-autocommission-corp-add;
+    }
+    .ui-state-default {
+        color: $color-dark;
+        min-height: 33px;
+    }
+}

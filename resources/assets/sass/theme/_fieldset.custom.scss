@@ -1,0 +1,19 @@
+.fieldset-custom {
+    fieldset {
+        min-width: -webkit-min-content;
+        border-width: 2px;
+        border-style: groove;
+        border-color: threedface;
+        border-image: initial;
+        padding: 0px 15px 15px;
+        legend {
+            width: inherit;
+            font-size: 1rem;
+            padding: 2px;
+        }
+        .form-search {
+            background-color: $color-bg-form-search;
+            border: 2px solid $color-table;
+        }
+    }
+}

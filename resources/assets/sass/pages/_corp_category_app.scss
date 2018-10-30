@@ -1,0 +1,54 @@
+.corp_category_app{
+    .text-title{
+        font-size: 1.17em;
+        font-weight: bold;
+        color: $color-grey-primary;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    .table{
+        th, td{
+            border: 2px solid gray;
+        }
+    }
+
+    .bg-yellow{
+        background-color: $color-yellow-light;
+    }
+
+    .bg-green{
+        background-color: $color-bg-td-accep;
+    }
+
+    .bg-red{
+        background-color: #f5a9a9;
+    }
+
+    .btn-w200{
+        width: 200px;
+        @media screen and (max-width: 576px){
+            width: 40%;
+        }
+    }
+
+    a{
+        text-decoration: unset;
+        color: $color-orange-primary;
+        &:hover{
+            text-decoration: unset;
+        }
+    }
+
+    .checkAll{
+        &:focus{
+            box-shadow: unset;
+        }
+    }
+
+    .table-list-report{
+        margin-top: 20px;
+        thead{
+            background-color: $color-yellow-light;
+        }
+    }
+}

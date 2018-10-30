@@ -1,0 +1,24 @@
+.auction-support {
+    button {
+        width: 100px;
+    }
+    #kihon_info, #contact {
+        display: none;
+    }
+    .auction_fee {
+        overflow:scroll;
+        padding-left: 3rem;
+    }
+    .custom-control {
+        display: inline-block;
+        .custom-control-label:hover {
+            background-color: white;
+        }
+    }
+    small {
+        font-size: 85%;
+    }
+    #understandBtn {
+        white-space: normal;
+    }
+}

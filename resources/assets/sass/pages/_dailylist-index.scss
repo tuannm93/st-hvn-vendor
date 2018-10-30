@@ -1,0 +1,49 @@
+.dailylist-index{
+    .nav-tabs{
+        display: flex;
+        ul{
+            li{
+                list-style-type: none;
+                float: left;
+                margin: 0px;
+                padding: 10px;
+                height: 10px;
+               
+            }
+        }
+    
+    }
+    h5{
+        font-family: $font-family-sans-serif;
+        font-weight: bold;
+        color: $color-font;
+    }
+    @media screen and (max-width: 700px) {
+        .row, .nav-tabs {   
+            flex-direction: column;
+        }
+    }
+    
+    a {
+        text-decoration: underline;
+        color: $color-orange-primary;
+        &:hover{
+            color: $color-orange-primary;
+        }
+        &.active{
+            background-color: $color-background-tab!important;
+            color:$color-orange-primary!important;
+        }
+    }
+    th{
+        background-color: $color-orange-lighter;
+        font-weight: normal;
+        border:1px solid $color-border-font;
+    }
+    td {
+        border:1px solid $color-border-font;
+    }
+    .color{
+        background-color: $color-background-tab;
+    }
+}

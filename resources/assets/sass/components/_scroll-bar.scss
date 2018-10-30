@@ -1,0 +1,12 @@
+.custom-scroll-x {
+    overflow-x: scroll;
+    &::-webkit-scrollbar {
+        height: 10px;
+        background-color: rgba(255, 255,255 , 0);
+    }
+    &::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        background-color: $color-dark;
+        background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+    }
+}

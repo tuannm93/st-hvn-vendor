@@ -1,0 +1,45 @@
+<?php
+
+return [
+    'address' => '現場住所',
+    'category_name' => 'カテゴリ',
+    'commission_unit_price_category' => '最大取次単価（全国）',
+    'corp_name' => '企業名',
+    'candidate' => '取次先候補',
+    'category_area_releasing_condition' => 'カテゴリ・対応可能エリア条件解除',
+
+    'franchise_store' => '加盟店',
+    'unit_price_per_contract' => '取次単価',
+    'the_past_year' => '過去1年',
+    'unit_price' => '単価',
+    'rank' => 'ランク',
+
+    'location' => '所在地',
+    'genre_intermediation' => 'ジャンル取次数',
+    'genre_closing_rate' => 'ジャンル成約率',
+    'cumulative' => '累計',
+    'expertise' => '専門性',
+    'available_time' => '連絡可能時間',
+    'available_time_to' => '対応可能時間',
+    'holiday' => '休業日',
+    'decide' => '確定',
+    'clear_selection' => '選択クリア',
+    'before_ordering' => '【SF用】取次前失注用',
+    'waiting_for_contact' => '【要ヒアリングor連絡待ち】',
+    'pioneering_request' => '【開拓依頼中】',
+    'search' => '検索',
+    '24h' => '24時間',
+    'remark' => '備考',
+    'first_time' => '[初]',
+    'close' => '閉じる',
+    'm_corp_display' => [
+        'title' => '企業名候補',
+        'close_btn' => '閉じる',
+        'header' => '企業名',
+        'search_btn' => '検索',
+        'next' => '次ページ >',
+        'prev' => '< 前ページ',
+    ],
+    'noneCategoryOrJis' => 'カテゴリ、都道府県、市区町村が未入力または入力に誤りがあります。',
+    'pic_name' => '作業担当者'
+];

@@ -1,0 +1,44 @@
+.report-application-answer {
+    fieldset {
+        .form-search {
+            padding: .5rem;
+            button {
+                width: 6.25rem;
+            }
+        }
+    }
+    .table-app-answer {
+        th, td {
+            border: 2px solid $color-border-table-back;
+            vertical-align: middle;
+            padding: 3px;
+        }
+        thead {
+            tr {
+                th {
+                    text-align: center;
+                    background-color: $color-yellow-light;
+                }
+            }
+        }
+        tbody {
+            tr {
+                td {
+                    a, a:hover, a:active {
+                        text-decoration: none;
+                        color: $color-orange-primary;
+                    }
+                    &.apply {
+                        background-color: $color-bg-td-apply;
+                    }
+                    &.accep {
+                        background-color: $color-bg-td-accep;
+                    }
+                    &.dismissal {
+                        background-color: $color-bg-td-dismissal;
+                    }
+                }
+            }
+        }
+    }
+}

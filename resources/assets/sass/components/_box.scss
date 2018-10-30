@@ -1,0 +1,21 @@
+.box {
+    &__mess {
+        padding: .5rem;
+        font-size: 0.9375rem;
+        font-weight: bold;
+        border: solid 2px $color-orange-light;
+        background-color: #fffaf3;
+    }
+    &--success {
+        color: $color-orange-light;
+    }
+    &--error {
+        color: $color-text-danger;
+    }
+    &--bg-gray {
+        background-color: $color-bg-search-box-report-jbr-receipt;
+    }
+    &--border-gray {
+        border: 2px solid $color-border-search-box-report-jbr-receipt;
+    }
+}
